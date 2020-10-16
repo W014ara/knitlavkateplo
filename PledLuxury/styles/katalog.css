@@ -1,0 +1,2290 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-size: 10px;
+  overflow-x: hidden;
+}
+
+html a,
+body a {
+  cursor: pointer;
+  color: #767676;
+  text-decoration: none;
+}
+
+html a:visited,
+body a:visited {
+  cursor: pointer;
+  color: #767676;
+}
+
+html a:active,
+body a:active {
+  cursor: pointer;
+  color: #767676;
+}
+
+.root {
+  position: relative;
+  width: inherit;
+  background: #F9FEFF;
+}
+
+.root header {
+  position: relative;
+  width: inherit;
+  height: 15rem;
+  background: #F9FEFF;
+  border: 1px solid #F9FEFF;
+}
+
+.root header .contact-menu .networks .instagram:hover {
+  cursor: pointer;
+}
+
+.root header .contact-menu .networks .whatsapp:hover {
+  cursor: pointer;
+}
+
+.root header .contact-menu .networks .telegram:hover {
+  cursor: pointer;
+}
+
+.root .main {
+  position: relative;
+  width: 100%;
+}
+
+.root .main .katalog_products .product .more-btn:hover {
+  cursor: pointer;
+}
+
+.root .main .katalog_products .product.sale .price .normal-price {
+  text-decoration: underline;
+}
+
+.root .main .back-btn:hover {
+  cursor: pointer;
+}
+
+@media (min-width: 0px) and (max-width: 320px) {
+  header .title h1 {
+    font-family: Teplo;
+    font-size: 6rem;
+    margin-top: 4rem;
+    margin-left: 2rem;
+  }
+  header .title a {
+    display: none;
+  }
+  header .contact-menu {
+    display: none;
+  }
+  header .burger {
+    display: block;
+    position: absolute;
+    left: 26rem;
+    top: 6.5rem;
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  header .burger .burger-btn {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    background: url("../resources_/imgs/system/burger.svg");
+    background-size: cover;
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+  }
+  header .burger.active .contacts {
+    display: block;
+  }
+  header .burger.active .burger-btn {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  header .burger .contacts {
+    position: absolute;
+    display: none;
+    top: 5rem;
+    right: -3rem;
+    width: 33rem;
+    background: #5198A6;
+  }
+  header .burger .contacts .telephone {
+    text-align: center;
+    height: 5rem;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: white;
+  }
+  header .burger .contacts .telephone:hover {
+    background: #00d5ff;
+  }
+  header .burger .contacts .instagram {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 5rem;
+  }
+  header .burger .contacts .instagram img {
+    margin-left: 7rem;
+    width: 5rem;
+    height: 5rem;
+  }
+  header .burger .contacts .instagram p {
+    margin-top: 1rem;
+    text-align: center;
+    height: 5rem;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: white;
+  }
+  header .burger .contacts .instagram:hover {
+    background: #00d5ff;
+  }
+  header .burger .contacts .whatsapp {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 5rem;
+  }
+  header .burger .contacts .whatsapp img {
+    margin-left: 7rem;
+    width: 5rem;
+    height: 5rem;
+  }
+  header .burger .contacts .whatsapp p {
+    margin-top: 1rem;
+    text-align: center;
+    height: 5rem;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: white;
+  }
+  header .burger .contacts .whatsapp:hover {
+    background: #00d5ff;
+  }
+  header .burger .contacts .telegram {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 5rem;
+  }
+  header .burger .contacts .telegram img {
+    margin-left: 7rem;
+    width: 5rem;
+    height: 5rem;
+  }
+  header .burger .contacts .telegram p {
+    margin-top: 1rem;
+    text-align: center;
+    height: 5rem;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: white;
+  }
+  header .burger .contacts .telegram:hover {
+    background: #00d5ff;
+  }
+  .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main .katalog_title {
+    width: 100%;
+    height: 10rem;
+    margin-top: 5rem;
+  }
+  .main .katalog_title h1 {
+    text-align: center;
+    font-family: OpenSansLight;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 3rem;
+    line-height: 6.5rem;
+    letter-spacing: 0.105em;
+    color: #000000;
+  }
+  .main .katalog_title h1::before {
+    position: absolute;
+    margin-top: 5.5rem;
+    margin-left: -17%;
+    content: '';
+    width: 25rem;
+    height: .4rem;
+    background: #000000;
+  }
+  .main .katalog_title h1::after {
+    position: absolute;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    content: '';
+    width: 3.2rem;
+    height: 3rem;
+    background: url("../resources_/imgs/system/market_logo.svg");
+    background-size: cover;
+  }
+  .main .katalog_products {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main .katalog_products .product {
+    margin: 0 auto;
+    margin-top: 5rem;
+  }
+  .main .katalog_products .product.sale::before {
+    content: '';
+    position: absolute;
+    margin-top: 1rem;
+    margin-left: 19.8rem;
+    width: 10rem;
+    height: 3rem;
+    background: url("../resources_/imgs/system/SALE-ICON.svg");
+    background-size: cover;
+    -webkit-transform: rotate(13deg);
+            transform: rotate(13deg);
+  }
+  .main .katalog_products .product img {
+    border-radius: 10%;
+    width: 30rem;
+    height: 25rem;
+  }
+  .main .katalog_products .product .title {
+    margin: 0 auto;
+  }
+  .main .katalog_products .product .title h2 {
+    text-align: center;
+    font-family: OpenSansBold;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.5rem;
+    letter-spacing: 0.105em;
+    color: #000000;
+  }
+  .main .katalog_products .product .price {
+    position: relative;
+    margin-top: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .main .katalog_products .product .price .sale-price {
+    margin: 0 auto;
+    font-family: OpenSansLight;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.3rem;
+    letter-spacing: 0.105em;
+    -webkit-text-decoration-line: line-through;
+            text-decoration-line: line-through;
+    color: #969696;
+  }
+  .main .katalog_products .product .price .normal-price {
+    margin: 0 auto;
+    font-family: OpenSansLight;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.3rem;
+    letter-spacing: 0.105em;
+    color: black;
+  }
+  .main .katalog_products .product .more-btn {
+    margin: 0 auto;
+    margin-top: 2rem;
+    text-align: center;
+    padding-top: 0.5rem;
+    width: 20rem;
+    height: 5rem;
+    border: .3rem solid #5198A6;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.3rem;
+    line-height: 123.68%;
+    letter-spacing: -0.045em;
+    color: #5198A6;
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+  }
+  .main .katalog_products .product .more-btn:hover {
+    background: #5198A6;
+    color: white;
+  }
+  .main .katalog_products .delimeter {
+    margin: 0 auto;
+    margin-top: 5rem;
+    width: 25rem;
+    height: .4rem;
+    background: black;
+  }
+  .main .back-btn {
+    margin: 0 auto;
+    margin-top: 10rem;
+    padding-top: .5rem;
+    width: 20rem;
+    height: 4rem;
+    border: .3rem solid #5198A6;
+    background: #5198A6;
+    -webkit-box-shadow: 0rem 0.7rem 0.4rem rgba(0, 0, 0, 0.25);
+            box-shadow: 0rem 0.7rem 0.4rem rgba(0, 0, 0, 0.25);
+    text-align: center;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.5rem;
+    line-height: 123.68%;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+  }
+  .main .back-btn:hover {
+    border: .3rem solid #5198A6;
+    background: none;
+    color: #5198A6;
+  }
+  footer {
+    margin-top: 2rem;
+    width: 100%;
+    background: #6A6A6A;
+    text-align: center;
+    font-family: Teplo;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1rem;
+    color: #FFFFFF;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 375px) {
+  header .title h1 {
+    font-family: Teplo;
+    font-size: 6rem;
+    margin-top: 4rem;
+    margin-left: 2rem;
+  }
+  header .title a {
+    display: none;
+  }
+  header .contact-menu {
+    display: none;
+  }
+  header .burger {
+    position: absolute;
+    left: 33rem;
+    top: 6.5rem;
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  header .burger .burger-btn {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    background: url("../resources_/imgs/system/burger.svg");
+    background-size: cover;
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+  }
+  header .burger.active .contacts {
+    display: block;
+  }
+  header .burger.active .burger-btn {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  header .burger .contacts {
+    position: absolute;
+    display: none;
+    top: 5rem;
+    right: -0.85rem;
+    width: 375px;
+    background: #5198A6;
+  }
+  header .burger .contacts .telephone {
+    text-align: center;
+    height: 5rem;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: white;
+  }
+  header .burger .contacts .telephone:hover {
+    background: #00d5ff;
+  }
+  header .burger .contacts .instagram {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 5rem;
+  }
+  header .burger .contacts .instagram img {
+    margin-left: 10rem;
+    width: 5rem;
+    height: 5rem;
+  }
+  header .burger .contacts .instagram p {
+    margin-top: 1rem;
+    text-align: center;
+    height: 5rem;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: white;
+  }
+  header .burger .contacts .instagram:hover {
+    background: #00d5ff;
+  }
+  header .burger .contacts .whatsapp {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 5rem;
+  }
+  header .burger .contacts .whatsapp img {
+    margin-left: 10rem;
+    width: 5rem;
+    height: 5rem;
+  }
+  header .burger .contacts .whatsapp p {
+    margin-top: 1rem;
+    text-align: center;
+    height: 5rem;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: white;
+  }
+  header .burger .contacts .whatsapp:hover {
+    background: #00d5ff;
+  }
+  header .burger .contacts .telegram {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 5rem;
+  }
+  header .burger .contacts .telegram img {
+    margin-left: 10rem;
+    width: 5rem;
+    height: 5rem;
+  }
+  header .burger .contacts .telegram p {
+    margin-top: 1rem;
+    text-align: center;
+    height: 5rem;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: white;
+  }
+  header .burger .contacts .telegram:hover {
+    background: #00d5ff;
+  }
+  .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main .katalog_title {
+    width: 100%;
+    height: 10rem;
+    margin-top: 5rem;
+  }
+  .main .katalog_title h1 {
+    text-align: center;
+    font-family: OpenSansLight;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 3rem;
+    line-height: 6.5rem;
+    letter-spacing: 0.105em;
+    color: #000000;
+  }
+  .main .katalog_title h1::before {
+    position: absolute;
+    margin-top: 5.5rem;
+    margin-left: -17%;
+    content: '';
+    width: 25rem;
+    height: .4rem;
+    background: #000000;
+  }
+  .main .katalog_title h1::after {
+    position: absolute;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    content: '';
+    width: 3.2rem;
+    height: 3rem;
+    background: url("../resources_/imgs/system/market_logo.svg");
+    background-size: cover;
+  }
+  .main .katalog_products {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main .katalog_products .product {
+    margin: 0 auto;
+    margin-top: 5rem;
+  }
+  .main .katalog_products .product.sale::before {
+    content: '';
+    position: absolute;
+    margin-top: 1rem;
+    margin-left: 19.8rem;
+    width: 10rem;
+    height: 3rem;
+    background: url("../resources_/imgs/system/SALE-ICON.svg");
+    background-size: cover;
+    -webkit-transform: rotate(13deg);
+            transform: rotate(13deg);
+  }
+  .main .katalog_products .product img {
+    border-radius: 10%;
+    width: 30rem;
+    height: 25rem;
+  }
+  .main .katalog_products .product .title {
+    margin: 0 auto;
+  }
+  .main .katalog_products .product .title h2 {
+    text-align: center;
+    font-family: OpenSansBold;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.5rem;
+    letter-spacing: 0.105em;
+    color: #000000;
+  }
+  .main .katalog_products .product .price {
+    position: relative;
+    margin-top: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .main .katalog_products .product .price .sale-price {
+    margin: 0 auto;
+    font-family: OpenSansLight;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.3rem;
+    letter-spacing: 0.105em;
+    -webkit-text-decoration-line: line-through;
+            text-decoration-line: line-through;
+    color: #969696;
+  }
+  .main .katalog_products .product .price .normal-price {
+    margin: 0 auto;
+    font-family: OpenSansLight;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.3rem;
+    letter-spacing: 0.105em;
+    color: black;
+  }
+  .main .katalog_products .product .more-btn {
+    margin: 0 auto;
+    margin-top: 2rem;
+    text-align: center;
+    padding-top: 0.5rem;
+    width: 20rem;
+    height: 5rem;
+    border: .3rem solid #5198A6;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.3rem;
+    line-height: 123.68%;
+    letter-spacing: -0.045em;
+    color: #5198A6;
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+  }
+  .main .katalog_products .product .more-btn:hover {
+    background: #5198A6;
+    color: white;
+  }
+  .main .katalog_products .delimeter {
+    margin: 0 auto;
+    margin-top: 5rem;
+    width: 25rem;
+    height: .4rem;
+    background: black;
+  }
+  .main .back-btn {
+    margin: 0 auto;
+    margin-top: 10rem;
+    padding-top: .5rem;
+    width: 20rem;
+    height: 4rem;
+    border: .3rem solid #5198A6;
+    background: #5198A6;
+    -webkit-box-shadow: 0rem 0.7rem 0.4rem rgba(0, 0, 0, 0.25);
+            box-shadow: 0rem 0.7rem 0.4rem rgba(0, 0, 0, 0.25);
+    text-align: center;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.5rem;
+    line-height: 123.68%;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+  }
+  .main .back-btn:hover {
+    border: .3rem solid #5198A6;
+    background: none;
+    color: #5198A6;
+  }
+  footer {
+    margin-top: 2rem;
+    width: 100%;
+    background: #6A6A6A;
+    text-align: center;
+    font-family: Teplo;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1rem;
+    color: #FFFFFF;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 425px) {
+  header .title h1 {
+    font-family: Teplo;
+    font-size: 7rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+  }
+  header .title a {
+    display: none;
+  }
+  header .contact-menu {
+    display: none;
+  }
+  header .burger {
+    position: absolute;
+    left: 37rem;
+    top: 5rem;
+    width: 4rem;
+    height: 4rem;
+  }
+  header .burger .burger-btn {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    background: url("../resources_/imgs/system/burger.svg");
+    background-size: cover;
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+  }
+  header .burger.active .contacts {
+    display: block;
+  }
+  header .burger.active .burger-btn {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  header .burger .contacts {
+    position: absolute;
+    display: none;
+    top: 5rem;
+    right: -1.4rem;
+    width: 425px;
+    background: #5198A6;
+  }
+  header .burger .contacts .telephone {
+    text-align: center;
+    height: 5rem;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: white;
+  }
+  header .burger .contacts .telephone:hover {
+    background: #00d5ff;
+  }
+  header .burger .contacts .instagram {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 5rem;
+  }
+  header .burger .contacts .instagram img {
+    margin-left: 13rem;
+    width: 5rem;
+    height: 5rem;
+  }
+  header .burger .contacts .instagram p {
+    margin-top: 1rem;
+    text-align: center;
+    height: 5rem;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: white;
+  }
+  header .burger .contacts .instagram:hover {
+    background: #00d5ff;
+  }
+  header .burger .contacts .whatsapp {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 5rem;
+  }
+  header .burger .contacts .whatsapp img {
+    margin-left: 13rem;
+    width: 5rem;
+    height: 5rem;
+  }
+  header .burger .contacts .whatsapp p {
+    margin-top: 1rem;
+    text-align: center;
+    height: 5rem;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: white;
+  }
+  header .burger .contacts .whatsapp:hover {
+    background: #00d5ff;
+  }
+  header .burger .contacts .telegram {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 5rem;
+  }
+  header .burger .contacts .telegram img {
+    margin-left: 13rem;
+    width: 5rem;
+    height: 5rem;
+  }
+  header .burger .contacts .telegram p {
+    margin-top: 1rem;
+    text-align: center;
+    height: 5rem;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: white;
+  }
+  header .burger .contacts .telegram:hover {
+    background: #00d5ff;
+  }
+  .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main .katalog_title {
+    width: 100%;
+    height: 10rem;
+    margin-top: 5rem;
+  }
+  .main .katalog_title h1 {
+    text-align: center;
+    font-family: OpenSansLight;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 3rem;
+    line-height: 6.5rem;
+    letter-spacing: 0.105em;
+    color: #000000;
+  }
+  .main .katalog_title h1::before {
+    position: absolute;
+    margin-top: 5.5rem;
+    margin-left: -12%;
+    content: '';
+    width: 25rem;
+    height: .4rem;
+    background: #000000;
+  }
+  .main .katalog_title h1::after {
+    position: absolute;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    content: '';
+    width: 3.2rem;
+    height: 3rem;
+    background: url("../resources_/imgs/system/market_logo.svg");
+    background-size: cover;
+  }
+  .main .katalog_products {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main .katalog_products .product {
+    margin: 0 auto;
+    margin-top: 5rem;
+  }
+  .main .katalog_products .product.sale::before {
+    content: '';
+    position: absolute;
+    margin-top: 1rem;
+    margin-left: 19.8rem;
+    width: 10rem;
+    height: 3rem;
+    background: url("../resources_/imgs/system/SALE-ICON.svg");
+    background-size: cover;
+    -webkit-transform: rotate(13deg);
+            transform: rotate(13deg);
+  }
+  .main .katalog_products .product img {
+    border-radius: 10%;
+    width: 30rem;
+    height: 25rem;
+  }
+  .main .katalog_products .product .title {
+    margin: 0 auto;
+  }
+  .main .katalog_products .product .title h2 {
+    text-align: center;
+    font-family: OpenSansBold;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.5rem;
+    letter-spacing: 0.105em;
+    color: #000000;
+  }
+  .main .katalog_products .product .price {
+    position: relative;
+    margin-top: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .main .katalog_products .product .price .sale-price {
+    margin: 0 auto;
+    font-family: OpenSansLight;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.3rem;
+    letter-spacing: 0.105em;
+    -webkit-text-decoration-line: line-through;
+            text-decoration-line: line-through;
+    color: #969696;
+  }
+  .main .katalog_products .product .price .normal-price {
+    margin: 0 auto;
+    font-family: OpenSansLight;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.3rem;
+    letter-spacing: 0.105em;
+    color: black;
+  }
+  .main .katalog_products .product .more-btn {
+    margin: 0 auto;
+    margin-top: 2rem;
+    text-align: center;
+    padding-top: 0.5rem;
+    width: 20rem;
+    height: 5rem;
+    border: .3rem solid #5198A6;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.3rem;
+    line-height: 123.68%;
+    letter-spacing: -0.045em;
+    color: #5198A6;
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+  }
+  .main .katalog_products .product .more-btn:hover {
+    background: #5198A6;
+    color: white;
+  }
+  .main .katalog_products .delimeter {
+    margin: 0 auto;
+    margin-top: 5rem;
+    width: 25rem;
+    height: .4rem;
+    background: black;
+  }
+  .main .back-btn {
+    margin: 0 auto;
+    margin-top: 10rem;
+    padding-top: .5rem;
+    width: 20rem;
+    height: 4rem;
+    border: .3rem solid #5198A6;
+    background: #5198A6;
+    -webkit-box-shadow: 0rem 0.7rem 0.4rem rgba(0, 0, 0, 0.25);
+            box-shadow: 0rem 0.7rem 0.4rem rgba(0, 0, 0, 0.25);
+    text-align: center;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.5rem;
+    line-height: 123.68%;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+  }
+  .main .back-btn:hover {
+    border: .3rem solid #5198A6;
+    background: none;
+    color: #5198A6;
+  }
+  footer {
+    margin-top: 2rem;
+    width: 100%;
+    background: #6A6A6A;
+    text-align: center;
+    font-family: Teplo;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1rem;
+    color: #FFFFFF;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  header .burger {
+    display: none;
+  }
+  header .title {
+    width: 30rem;
+    height: inherit;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 30%;
+  }
+  header .title h1 {
+    text-align: center;
+    font-family: Teplo;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 6rem;
+    line-height: 8rem;
+    color: #000000;
+  }
+  header .title a {
+    margin-top: -1rem;
+    text-align: center;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+    color: #5698A5;
+  }
+  header .contact-menu {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    top: 0;
+    left: 75%;
+    width: 20rem;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    color: #767676;
+  }
+  header .contact-menu .number {
+    text-align: center;
+  }
+  header .contact-menu .networks {
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    font-size: 0.7em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  header .contact-menu .networks .instagram {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+  }
+  header .contact-menu .networks .instagram:hover {
+    border-bottom: .3rem solid #767676;
+  }
+  header .contact-menu .networks .whatsapp {
+    margin-left: 1rem;
+    margin-top: -0.3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+  }
+  header .contact-menu .networks .whatsapp:hover {
+    border-bottom: .3rem solid #767676;
+  }
+  header .contact-menu .networks .telegram {
+    margin-left: 1rem;
+    margin-top: -0.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+  }
+  header .contact-menu .networks .telegram:hover {
+    border-bottom: .3rem solid #767676;
+  }
+  .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main .katalog_title {
+    width: 100%;
+    height: 10rem;
+    margin-top: 5rem;
+  }
+  .main .katalog_title h1 {
+    text-align: center;
+    font-family: OpenSansLight;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 3rem;
+    line-height: 6.5rem;
+    letter-spacing: 0.105em;
+    color: #000000;
+  }
+  .main .katalog_title h1::before {
+    position: absolute;
+    margin-top: 5.5rem;
+    margin-left: -6%;
+    content: '';
+    width: 25rem;
+    height: .4rem;
+    background: #000000;
+  }
+  .main .katalog_title h1::after {
+    position: absolute;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    content: '';
+    width: 3.2rem;
+    height: 3rem;
+    background: url("../resources_/imgs/system/market_logo.svg");
+    background-size: cover;
+  }
+  .main .katalog_products {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main .katalog_products .product {
+    margin: 0 auto;
+    margin-top: 5rem;
+  }
+  .main .katalog_products .product.sale::before {
+    content: '';
+    position: absolute;
+    margin-top: 1rem;
+    margin-left: 19.8rem;
+    width: 10rem;
+    height: 3rem;
+    background: url("../resources_/imgs/system/SALE-ICON.svg");
+    background-size: cover;
+    -webkit-transform: rotate(13deg);
+            transform: rotate(13deg);
+  }
+  .main .katalog_products .product img {
+    border-radius: 10%;
+    width: 30rem;
+    height: 25rem;
+  }
+  .main .katalog_products .product .title {
+    margin: 0 auto;
+  }
+  .main .katalog_products .product .title h2 {
+    text-align: center;
+    font-family: OpenSansBold;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.5rem;
+    letter-spacing: 0.105em;
+    color: #000000;
+  }
+  .main .katalog_products .product .price {
+    position: relative;
+    margin-top: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .main .katalog_products .product .price .sale-price {
+    margin: 0 auto;
+    font-family: OpenSansLight;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.3rem;
+    letter-spacing: 0.105em;
+    -webkit-text-decoration-line: line-through;
+            text-decoration-line: line-through;
+    color: #969696;
+  }
+  .main .katalog_products .product .price .normal-price {
+    margin: 0 auto;
+    font-family: OpenSansLight;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.3rem;
+    letter-spacing: 0.105em;
+    color: black;
+  }
+  .main .katalog_products .product .more-btn {
+    margin: 0 auto;
+    margin-top: 2rem;
+    text-align: center;
+    padding-top: 0.5rem;
+    width: 20rem;
+    height: 5rem;
+    border: .3rem solid #5198A6;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.3rem;
+    line-height: 123.68%;
+    letter-spacing: -0.045em;
+    color: #5198A6;
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+  }
+  .main .katalog_products .product .more-btn:hover {
+    background: #5198A6;
+    color: white;
+  }
+  .main .katalog_products .delimeter {
+    margin: 0 auto;
+    margin-top: 5rem;
+    width: 25rem;
+    height: .4rem;
+    background: black;
+  }
+  .main .back-btn {
+    margin: 0 auto;
+    margin-top: 10rem;
+    padding-top: .5rem;
+    width: 20rem;
+    height: 4rem;
+    border: .3rem solid #5198A6;
+    background: #5198A6;
+    -webkit-box-shadow: 0rem 0.7rem 0.4rem rgba(0, 0, 0, 0.25);
+            box-shadow: 0rem 0.7rem 0.4rem rgba(0, 0, 0, 0.25);
+    text-align: center;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.5rem;
+    line-height: 123.68%;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+  }
+  .main .back-btn:hover {
+    border: .3rem solid #5198A6;
+    background: none;
+    color: #5198A6;
+  }
+  footer {
+    margin-top: 2rem;
+    width: 100%;
+    background: #6A6A6A;
+    text-align: center;
+    font-family: Teplo;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1rem;
+    color: #FFFFFF;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  header .burger {
+    display: none;
+  }
+  header .title {
+    width: 30rem;
+    height: inherit;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 40%;
+  }
+  header .title h1 {
+    text-align: center;
+    font-family: Teplo;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 6rem;
+    line-height: 8rem;
+    color: #000000;
+  }
+  header .title a {
+    margin-top: -1rem;
+    text-align: center;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+    color: #5698A5;
+  }
+  header .contact-menu {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    top: 0;
+    left: 80%;
+    width: 20rem;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    color: #767676;
+  }
+  header .contact-menu .number {
+    text-align: center;
+  }
+  header .contact-menu .networks {
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    font-size: 0.7em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  header .contact-menu .networks .instagram {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+  }
+  header .contact-menu .networks .instagram:hover {
+    border-bottom: .3rem solid #767676;
+  }
+  header .contact-menu .networks .whatsapp {
+    margin-left: 1rem;
+    margin-top: -0.3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+  }
+  header .contact-menu .networks .whatsapp:hover {
+    border-bottom: .3rem solid #767676;
+  }
+  header .contact-menu .networks .telegram {
+    margin-left: 1rem;
+    margin-top: -0.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+  }
+  header .contact-menu .networks .telegram:hover {
+    border-bottom: .3rem solid #767676;
+  }
+  .main {
+    min-height: 82.8vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main .katalog_title {
+    width: 100%;
+    height: 10rem;
+    margin-top: 5rem;
+    margin-left: 3%;
+  }
+  .main .katalog_title h1 {
+    text-align: center;
+    font-family: OpenSansLight;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 3rem;
+    line-height: 6.5rem;
+    letter-spacing: 0.105em;
+    color: #000000;
+  }
+  .main .katalog_title h1::before {
+    position: absolute;
+    margin-top: 5.5rem;
+    margin-left: -5%;
+    content: '';
+    width: 25rem;
+    height: .4rem;
+    background: #000000;
+  }
+  .main .katalog_title h1::after {
+    position: absolute;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    content: '';
+    width: 3.2rem;
+    height: 3rem;
+    background: url("../resources_/imgs/system/market_logo.svg");
+    background-size: cover;
+  }
+  .main .katalog_products {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .main .katalog_products .product {
+    margin: 0 auto;
+    margin-top: 5rem;
+  }
+  .main .katalog_products .product.sale::before {
+    content: '';
+    position: absolute;
+    margin-top: 1rem;
+    margin-left: 19.8rem;
+    width: 10rem;
+    height: 3rem;
+    background: url("../resources_/imgs/system/SALE-ICON.svg");
+    background-size: cover;
+    -webkit-transform: rotate(13deg);
+            transform: rotate(13deg);
+  }
+  .main .katalog_products .product img {
+    border-radius: 10%;
+    width: 30rem;
+    height: 25rem;
+  }
+  .main .katalog_products .product .title {
+    margin: 0 auto;
+  }
+  .main .katalog_products .product .title h2 {
+    text-align: center;
+    font-family: OpenSansBold;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.5rem;
+    letter-spacing: 0.105em;
+    color: #000000;
+  }
+  .main .katalog_products .product .price {
+    position: relative;
+    margin-top: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .main .katalog_products .product .price .sale-price {
+    margin: 0 auto;
+    font-family: OpenSansLight;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.3rem;
+    letter-spacing: 0.105em;
+    -webkit-text-decoration-line: line-through;
+            text-decoration-line: line-through;
+    color: #969696;
+  }
+  .main .katalog_products .product .price .normal-price {
+    margin: 0 auto;
+    font-family: OpenSansLight;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.3rem;
+    letter-spacing: 0.105em;
+    color: black;
+  }
+  .main .katalog_products .product .more-btn {
+    margin: 0 auto;
+    margin-top: 2rem;
+    text-align: center;
+    padding-top: 0.8rem;
+    width: 25rem;
+    height: 6rem;
+    border: .3rem solid #5198A6;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3rem;
+    line-height: 123.68%;
+    letter-spacing: -0.045em;
+    color: #5198A6;
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+  }
+  .main .katalog_products .product .more-btn:hover {
+    background: #5198A6;
+    color: white;
+  }
+  .main .back-btn {
+    margin: 0 auto;
+    margin-top: 10rem;
+    padding-top: .5rem;
+    width: 20rem;
+    height: 4rem;
+    border: .3rem solid #5198A6;
+    background: #5198A6;
+    -webkit-box-shadow: 0rem 0.7rem 0.4rem rgba(0, 0, 0, 0.25);
+            box-shadow: 0rem 0.7rem 0.4rem rgba(0, 0, 0, 0.25);
+    text-align: center;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.5rem;
+    line-height: 123.68%;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+  }
+  .main .back-btn:hover {
+    border: .3rem solid #5198A6;
+    background: none;
+    color: #5198A6;
+  }
+  footer {
+    margin-top: 2rem;
+    width: 100%;
+    background: #6A6A6A;
+    text-align: center;
+    font-family: Teplo;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1rem;
+    color: #FFFFFF;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  header .burger {
+    display: none;
+  }
+  header .title {
+    width: 30rem;
+    height: inherit;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 42%;
+  }
+  header .title h1 {
+    text-align: center;
+    font-family: Teplo;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 6rem;
+    line-height: 8rem;
+    color: #000000;
+  }
+  header .title a {
+    margin-top: -1rem;
+    text-align: center;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+    color: #5698A5;
+  }
+  header .contact-menu {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    top: 3rem;
+    left: 75%;
+    width: 35rem;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    color: #767676;
+  }
+  header .contact-menu .number {
+    text-align: center;
+  }
+  header .contact-menu .networks {
+    margin-top: 0.5rem;
+    margin-left: -1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  header .contact-menu .networks .instagram {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+  }
+  header .contact-menu .networks .instagram:hover {
+    border-bottom: .3rem solid #767676;
+  }
+  header .contact-menu .networks .instagram img {
+    width: 3rem;
+    height: 3rem;
+  }
+  header .contact-menu .networks .instagram p {
+    margin-top: .2rem;
+    font-size: 1.8rem;
+  }
+  header .contact-menu .networks .whatsapp {
+    margin-left: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+  }
+  header .contact-menu .networks .whatsapp:hover {
+    border-bottom: .3rem solid #767676;
+  }
+  header .contact-menu .networks .whatsapp img {
+    width: 3rem;
+    height: 3rem;
+  }
+  header .contact-menu .networks .whatsapp p {
+    margin-top: .2rem;
+    font-size: 1.8rem;
+  }
+  header .contact-menu .networks .telegram {
+    margin-left: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+  }
+  header .contact-menu .networks .telegram:hover {
+    border-bottom: .3rem solid #767676;
+  }
+  header .contact-menu .networks .telegram img {
+    width: 3rem;
+    height: 3rem;
+  }
+  header .contact-menu .networks .telegram p {
+    margin-top: .2rem;
+    font-size: 1.8rem;
+  }
+  .main {
+    min-height: 82.8vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main .katalog_title {
+    width: 100%;
+    height: 10rem;
+    margin-top: 5rem;
+    margin-left: 2%;
+  }
+  .main .katalog_title h1 {
+    text-align: center;
+    font-family: OpenSansLight;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 3rem;
+    line-height: 6.5rem;
+    letter-spacing: 0.105em;
+    color: #000000;
+  }
+  .main .katalog_title h1::before {
+    position: absolute;
+    margin-top: 5.5rem;
+    margin-left: -3%;
+    content: '';
+    width: 25rem;
+    height: .4rem;
+    background: #000000;
+  }
+  .main .katalog_title h1::after {
+    position: absolute;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    content: '';
+    width: 3.2rem;
+    height: 3rem;
+    background: url("../resources_/imgs/system/market_logo.svg");
+    background-size: cover;
+  }
+  .main .katalog_products {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .main .katalog_products .product {
+    margin: 0 auto;
+    margin-top: 5rem;
+    margin-left: 5rem;
+  }
+  .main .katalog_products .product.sale::before {
+    content: '';
+    position: absolute;
+    margin-top: 1rem;
+    margin-left: 30rem;
+    width: 10rem;
+    height: 3rem;
+    background: url("../resources_/imgs/system/SALE-ICON.svg");
+    background-size: cover;
+    -webkit-transform: rotate(13deg);
+            transform: rotate(13deg);
+  }
+  .main .katalog_products .product img {
+    border-radius: 10%;
+    width: 40rem;
+    height: 30rem;
+  }
+  .main .katalog_products .product .title {
+    margin: 0 auto;
+  }
+  .main .katalog_products .product .title h2 {
+    text-align: center;
+    font-family: OpenSansBold;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.5rem;
+    letter-spacing: 0.105em;
+    color: #000000;
+  }
+  .main .katalog_products .product .price {
+    position: relative;
+    margin-top: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .main .katalog_products .product .price .sale-price {
+    margin: 0 auto;
+    font-family: OpenSansLight;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.3rem;
+    letter-spacing: 0.105em;
+    -webkit-text-decoration-line: line-through;
+            text-decoration-line: line-through;
+    color: #969696;
+  }
+  .main .katalog_products .product .price .normal-price {
+    margin: 0 auto;
+    font-family: OpenSansLight;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.3rem;
+    letter-spacing: 0.105em;
+    color: black;
+  }
+  .main .katalog_products .product .more-btn {
+    margin: 0 auto;
+    margin-top: 2rem;
+    text-align: center;
+    padding-top: 0.8rem;
+    width: 25rem;
+    height: 6rem;
+    border: .3rem solid #5198A6;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3rem;
+    line-height: 123.68%;
+    letter-spacing: -0.045em;
+    color: #5198A6;
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+  }
+  .main .katalog_products .product .more-btn:hover {
+    background: #5198A6;
+    color: white;
+  }
+  .main .back-btn {
+    margin: 0 auto;
+    margin-top: 10rem;
+    margin-left: 43.5%;
+    padding-top: .5rem;
+    width: 20rem;
+    height: 4rem;
+    border: .3rem solid #5198A6;
+    background: #5198A6;
+    -webkit-box-shadow: 0rem 0.7rem 0.4rem rgba(0, 0, 0, 0.25);
+            box-shadow: 0rem 0.7rem 0.4rem rgba(0, 0, 0, 0.25);
+    text-align: center;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.5rem;
+    line-height: 123.68%;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+  }
+  .main .back-btn:hover {
+    border: .3rem solid #5198A6;
+    background: none;
+    color: #5198A6;
+  }
+  footer {
+    margin-top: 2rem;
+    width: 100%;
+    background: #6A6A6A;
+    text-align: center;
+    font-family: Teplo;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1rem;
+    color: #FFFFFF;
+  }
+}
+
+@media (min-width: 1441px) {
+  header .burger {
+    display: none;
+  }
+  header .title {
+    width: 30rem;
+    height: inherit;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 42%;
+  }
+  header .title h1 {
+    text-align: center;
+    font-family: Teplo;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 6rem;
+    line-height: 8rem;
+    color: #000000;
+  }
+  header .title a {
+    margin-top: -1rem;
+    text-align: center;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+    color: #5698A5;
+  }
+  header .contact-menu {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    top: 1.8rem;
+    left: 80%;
+    width: 35rem;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    color: #767676;
+  }
+  header .contact-menu .number {
+    text-align: center;
+  }
+  header .contact-menu .networks {
+    margin-top: 0.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  header .contact-menu .networks .instagram {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+  }
+  header .contact-menu .networks .instagram:hover {
+    border-bottom: .3rem solid #767676;
+  }
+  header .contact-menu .networks .instagram img {
+    width: 3rem;
+    height: 3rem;
+  }
+  header .contact-menu .networks .instagram p {
+    margin-top: .2rem;
+    font-size: 1.8rem;
+  }
+  header .contact-menu .networks .whatsapp {
+    margin-left: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+  }
+  header .contact-menu .networks .whatsapp:hover {
+    border-bottom: .3rem solid #767676;
+  }
+  header .contact-menu .networks .whatsapp img {
+    width: 3rem;
+    height: 3rem;
+  }
+  header .contact-menu .networks .whatsapp p {
+    margin-top: .2rem;
+    font-size: 1.8rem;
+  }
+  header .contact-menu .networks .telegram {
+    margin-left: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+  }
+  header .contact-menu .networks .telegram:hover {
+    border-bottom: .3rem solid #767676;
+  }
+  header .contact-menu .networks .telegram img {
+    width: 3rem;
+    height: 3rem;
+  }
+  header .contact-menu .networks .telegram p {
+    margin-top: .2rem;
+    font-size: 1.8rem;
+  }
+  .main {
+    min-height: 84.8vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main .katalog_title {
+    margin: 0 auto;
+    width: 100%;
+    height: 10rem;
+    margin-top: 5rem;
+  }
+  .main .katalog_title h1 {
+    margin-left: 45%;
+    font-family: OpenSansLight;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 3rem;
+    line-height: 6.5rem;
+    letter-spacing: 0.105em;
+    color: #000000;
+  }
+  .main .katalog_title h1::before {
+    position: absolute;
+    margin-top: 5.5rem;
+    margin-left: -1.75%;
+    content: '';
+    width: 25rem;
+    height: .4rem;
+    background: #000000;
+  }
+  .main .katalog_title h1::after {
+    position: absolute;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    content: '';
+    width: 3.2rem;
+    height: 3rem;
+    background: url("../resources_/imgs/system/market_logo.svg");
+    background-size: cover;
+  }
+  .main .katalog_products {
+    margin-left: 127px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .main .katalog_products .product {
+    margin: 0 auto;
+    margin-top: 5rem;
+    margin-left: 5rem;
+  }
+  .main .katalog_products .product.sale::before {
+    content: '';
+    position: absolute;
+    margin-top: 2rem;
+    margin-left: 40rem;
+    width: 20rem;
+    height: 6rem;
+    background: url("../resources_/imgs/system/SALE-ICON.svg");
+    background-size: cover;
+    -webkit-transform: rotate(13deg);
+            transform: rotate(13deg);
+  }
+  .main .katalog_products .product img {
+    border-radius: 10%;
+    width: 60rem;
+    height: 43rem;
+  }
+  .main .katalog_products .product .title {
+    margin: 0 auto;
+  }
+  .main .katalog_products .product .title h2 {
+    text-align: center;
+    font-family: OpenSansBold;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.5rem;
+    letter-spacing: 0.105em;
+    color: #000000;
+  }
+  .main .katalog_products .product .price {
+    position: relative;
+    margin-top: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .main .katalog_products .product .price .sale-price {
+    margin: 0 auto;
+    font-family: OpenSansLight;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.3rem;
+    letter-spacing: 0.105em;
+    -webkit-text-decoration-line: line-through;
+            text-decoration-line: line-through;
+    color: #969696;
+  }
+  .main .katalog_products .product .price .normal-price {
+    margin: 0 auto;
+    font-family: OpenSansLight;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.3rem;
+    letter-spacing: 0.105em;
+    color: black;
+  }
+  .main .katalog_products .product .more-btn {
+    margin: 0 auto;
+    margin-top: 2rem;
+    text-align: center;
+    padding-top: 0.8rem;
+    width: 25rem;
+    height: 6rem;
+    border: .3rem solid #5198A6;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3rem;
+    line-height: 123.68%;
+    letter-spacing: -0.045em;
+    color: #5198A6;
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+  }
+  .main .katalog_products .product .more-btn:hover {
+    background: #5198A6;
+    color: white;
+  }
+  .main .back-btn {
+    margin: 0 auto;
+    margin-top: 10rem;
+    margin-left: 43.5%;
+    padding-top: .5rem;
+    width: 20rem;
+    height: 4rem;
+    border: .3rem solid #5198A6;
+    background: #5198A6;
+    -webkit-box-shadow: 0rem 0.7rem 0.4rem rgba(0, 0, 0, 0.25);
+            box-shadow: 0rem 0.7rem 0.4rem rgba(0, 0, 0, 0.25);
+    text-align: center;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.5rem;
+    line-height: 123.68%;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+  }
+  .main .back-btn:hover {
+    border: .3rem solid #5198A6;
+    background: none;
+    color: #5198A6;
+  }
+  footer {
+    margin-top: 2rem;
+    width: 100%;
+    background: #6A6A6A;
+    padding-left: 46.2%;
+    font-family: Teplo;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1rem;
+    color: #FFFFFF;
+  }
+}
+
+@media (min-width: 3800px) {
+  html {
+    font-size: 1em;
+  }
+}
+
+@font-face {
+  font-family: OpenSansBold;
+  src: url("../resources_/fonts/opensanssemibold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: OpenSansLight;
+  src: url("../resources_/fonts/opensanslight.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: Teplo;
+  src: url("../resources_/fonts/14704.woff2") format("woff2");
+}
+/*# sourceMappingURL=katalog.css.map */

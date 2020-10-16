@@ -1,0 +1,4323 @@
+$main_color: #F9FEFF;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-size: 10px;
+    overflow-x: hidden;
+    a {
+        cursor: pointer;
+        color: #767676;
+        text-decoration: none;
+    }
+    a:visited {
+        cursor: pointer;
+        color: #767676;
+    }
+    a:active {
+        cursor: pointer;
+        color: #767676;
+    }
+}
+
+.root {
+    position: relative;
+    width: inherit;
+    background: $main_color;
+
+    header {
+        position: relative;
+        width: inherit;
+        height: 15rem;
+        background: #F9FEFF;
+        border: 1px solid #F9FEFF;
+        .contact-menu .networks .instagram:hover{
+            cursor: pointer;
+        }
+        .contact-menu .networks .whatsapp:hover{
+            cursor: pointer;
+        }
+        .contact-menu .networks .telegram:hover{
+            cursor: pointer;
+        }
+    }
+
+    .main {
+        position: relative;
+        width: 100%;
+
+        .more-products {
+            .products {
+                .product-1.sale {
+                    .price {
+                        .normal-price {
+                            h2 {
+                                margin-left: 20px;
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .more-products {
+            .products {
+                .product-1 {
+                    .price {
+                        .normal-price {
+                            h2 {
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .more-products {
+            .products {
+                .product-2.sale {
+                    .price {
+                        .normal-price {
+                            h2 {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .more-products {
+            .products {
+                .product-2 {
+                    .price {
+                        .normal-price {
+                            h2 {
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .more-products {
+            .products {
+                .product-3.sale {
+                    .price {
+                        .normal-price {
+                            h2 {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .more-products {
+            .products {
+                .product-3 {
+                    .price {
+                        .normal-price {
+                            h2 {
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .back-btn:hover{
+            cursor: pointer;
+        }
+    }
+}
+
+
+//Small small devices (Mobile S)
+@media (min-width: 0px) and (max-width: 320px) {
+    header {
+        .title {
+            h1 {
+                font-family: Teplo;
+                font-size: 6rem;
+                margin-top: 4rem;
+                margin-left: 2rem;
+            }
+
+            a {
+                display: none;
+            }
+        }
+
+        .contact-menu {
+            display: none;
+        }
+
+        .burger {
+            display: block;
+            position: absolute;
+            left: 26rem;
+            top: 6.5rem;
+            width: 3.5rem;
+            height: 3.5rem;
+
+            .burger-btn {
+                position: absolute;
+                width: inherit;
+                height: inherit;
+                background: url('../resources_/imgs/system/burger.svg');
+                background-size: cover;
+                transition: .2s ease-in-out;
+            }
+
+            &.active {
+                .contacts {
+                    display: block;
+                }
+
+                .burger-btn {
+                    transform: rotate(90deg);
+                }
+            }
+
+            .contacts {
+                position: absolute;
+                display: none;
+                top: 5rem;
+                right: -3rem;
+                width: 33rem;
+                background: #5198A6;
+
+                .telephone {
+                    text-align: center;
+                    height: 5rem;
+                    font-family: Open Sans;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 2rem;
+                    line-height: 2.5rem;
+                    color: white;
+
+                    &:hover {
+                        background: #00d5ff;
+                    }
+                }
+
+                .instagram {
+                    display: flex;
+                    height: 5rem;
+
+                    img {
+                        margin-left: 7rem;
+                        width: 5rem;
+                        height: 5rem;
+                    }
+
+                    p {
+                        margin-top: 1rem;
+                        text-align: center;
+                        height: 5rem;
+                        font-family: Open Sans;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 2rem;
+                        line-height: 2.5rem;
+                        color: white;
+                    }
+
+                    &:hover {
+                        background: #00d5ff;
+                    }
+                }
+
+                .whatsapp {
+                    display: flex;
+                    height: 5rem;
+
+                    img {
+                        margin-left: 7rem;
+                        width: 5rem;
+                        height: 5rem;
+                    }
+
+                    p {
+                        margin-top: 1rem;
+                        text-align: center;
+                        height: 5rem;
+                        font-family: Open Sans;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 2rem;
+                        line-height: 2.5rem;
+                        color: white;
+                    }
+
+                    &:hover {
+                        background: #00d5ff;
+                    }
+                }
+
+                .telegram {
+                    display: flex;
+                    height: 5rem;
+
+                    img {
+                        margin-left: 7rem;
+                        width: 5rem;
+                        height: 5rem;
+                    }
+
+                    p {
+                        margin-top: 1rem;
+                        text-align: center;
+                        height: 5rem;
+                        font-family: Open Sans;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 2rem;
+                        line-height: 2.5rem;
+                        color: white;
+                    }
+
+                    &:hover {
+                        background: #00d5ff;
+                    }
+                }
+            }
+        }
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+
+        .main_photo {
+            margin: 0 auto;
+            border-radius: 10%;
+            width: 30rem;
+            height: 25rem;
+            background: url('../resources_/imgs/product_info/gallery/527A6419.png');
+            background-size: cover;
+
+            &:hover {
+                background-size: 150%;
+            }
+
+            &.sale {
+                &:after {
+                    content: '';
+                    position: absolute;
+                    top: 1rem;
+                    left: 20.8rem;
+                    width: 10rem;
+                    height: 3rem;
+                    background: url('../resources_/imgs/system/SALE-ICON.svg');
+                    background-size: cover;
+                    transform: rotate(13deg);
+                }
+            }
+        }
+
+        .description {
+            .title {
+                margin-top: 1rem;
+                text-align: center;
+                font-family: OpenSansLight;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 2rem;
+                color: #000000;
+            }
+
+            .price {
+                margin-top: 1.5rem;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-around;
+
+                .sale {
+                    h1 {
+                        font-family: OpenSansLight;
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 2.3rem;
+                        letter-spacing: 0.105em;
+                        text-decoration-line: line-through;
+                        color: #969696;
+                    }
+                }
+
+                .normal_price {
+                    h1 {
+                        margin-left: 20px;
+                        font-family: OpenSansLight;
+                        font-weight: 300;
+                        font-size: 2.3rem;
+                        letter-spacing: 0.105em;
+                        text-decoration-line: underline;
+                        color: #000000;
+                    }
+                }
+            }
+
+            .text {
+                margin-top: 3rem;
+
+                h1 {
+                    margin-top: 1rem;
+                    text-align: center;
+                    font-family: OpenSansBold;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 2.3rem;
+                    color: #000000;
+                }
+
+                p {
+                    margin-top: 1.5rem;
+                    margin-left: 0.5rem;
+                    font-family: OpenSansLight;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 1.5rem;
+                    line-height: 2.5rem;
+                    letter-spacing: 0.105em;
+                    color: #0B0B0B;
+
+                    span {
+                        font-family: OpenSansBold;
+                    }
+                }
+            }
+        }
+
+        .delimiter {
+            margin-top: 1rem;
+            width: inherit;
+            height: .5rem;
+            background: #C4C4C4;
+        }
+
+        .more-products {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .title {
+                margin-top: 1.5rem;
+                align-self: center;
+
+                h1 {
+                    font-family: OpenSansBold;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 3rem;
+                    text-decoration-line: underline;
+                    color: #000000;
+                }
+            }
+
+            .products {
+                margin-top: 2rem;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                justify-content: center;
+
+                .product-1 {
+                    margin: 0 auto;
+
+                    &.sale {
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            margin-top: 1rem;
+                            margin-left: 19.8rem;
+                            width: 10rem;
+                            height: 3rem;
+                            background: url('../resources_/imgs/system/SALE-ICON.svg');
+                            background-size: cover;
+                            transform: rotate(13deg);
+                        }
+                    }
+
+                    img {
+                        border-radius: 10%;
+                        width: 30rem;
+                        height: 25rem;
+                    }
+
+                    .title {
+                        margin: 0 auto;
+
+                        h2 {
+                            text-align: center;
+                            font-family: OpenSansBold;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 2.5rem;
+                            letter-spacing: 0.105em;
+                            color: #000000;
+                        }
+                    }
+
+                    .price {
+                        position: relative;
+                        margin-top: 1rem;
+                        display: flex;
+                        flex-wrap: nowrap;
+
+                        .sale-price {
+                            margin: 0 auto;
+                            font-family: OpenSansLight;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 1.3rem;
+                            letter-spacing: 0.105em;
+                            text-decoration-line: line-through;
+                            color: #969696;
+                        }
+
+                        .normal-price {
+                            margin: 0 auto;
+                            font-family: OpenSansLight;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 1.3rem;
+                            letter-spacing: 0.105em;
+                            color: black;
+                        }
+                    }
+
+                    .more-btn {
+                        margin: 0 auto;
+                        margin-top: 2rem;
+                        text-align: center;
+                        padding-top: 0.8rem;
+                        width: 25rem;
+                        height: 6rem;
+                        border: .3rem solid #5198A6;
+                        box-sizing: border-box;
+                        font-family: Open Sans;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 3rem;
+                        line-height: 123.68%;
+                        letter-spacing: -0.045em;
+                        color: #5198A6;
+                        transition: .2s ease-in-out;
+
+                        &:hover {
+                            background: #5198A6;
+                            color: white;
+                        }
+                    }
+                }
+
+                .product-2 {
+                    margin: 0 auto;
+                    margin-top: 10rem;
+
+                    &.sale {
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            margin-top: 1rem;
+                            margin-left: 19.8rem;
+                            width: 10rem;
+                            height: 3rem;
+                            background: url('../resources_/imgs/system/SALE-ICON.svg');
+                            background-size: cover;
+                            transform: rotate(13deg);
+                        }
+                    }
+
+                    img {
+                        border-radius: 10%;
+                        width: 30rem;
+                        height: 25rem;
+                    }
+
+                    .title {
+                        margin: 0 auto;
+
+                        h2 {
+                            text-align: center;
+                            font-family: OpenSansBold;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 2.5rem;
+                            letter-spacing: 0.105em;
+                            color: #000000;
+                        }
+                    }
+
+                    .price {
+                        position: relative;
+                        margin-top: 1rem;
+                        display: flex;
+                        flex-wrap: nowrap;
+
+                        .sale-price {
+                            margin: 0 auto;
+                            font-family: OpenSansLight;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 1.3rem;
+                            letter-spacing: 0.105em;
+                            text-decoration-line: line-through;
+                            color: #969696;
+                        }
+
+                        .normal-price {
+                            margin: 0 auto;
+                            font-family: OpenSansLight;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 1.3rem;
+                            letter-spacing: 0.105em;
+                            color: black;
+                        }
+                    }
+
+                    .more-btn {
+                        margin: 0 auto;
+                        margin-top: 2rem;
+                        text-align: center;
+                        padding-top: 0.8rem;
+                        width: 25rem;
+                        height: 6rem;
+                        border: .3rem solid #5198A6;
+                        box-sizing: border-box;
+                        font-family: Open Sans;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 3rem;
+                        line-height: 123.68%;
+                        letter-spacing: -0.045em;
+                        color: #5198A6;
+                        transition: .2s ease-in-out;
+
+                        &:hover {
+                            background: #5198A6;
+                            color: white;
+                        }
+                    }
+                }
+
+                .product-3 {
+                    margin: 0 auto;
+                    margin-top: 10rem;
+
+                    &.sale {
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            margin-top: 1rem;
+                            margin-left: 19.8rem;
+                            width: 10rem;
+                            height: 3rem;
+                            background: url('../resources_/imgs/system/SALE-ICON.svg');
+                            background-size: cover;
+                            transform: rotate(13deg);
+                        }
+                    }
+
+                    img {
+                        border-radius: 10%;
+                        width: 30rem;
+                        height: 25rem;
+                    }
+
+                    .title {
+                        margin: 0 auto;
+
+                        h2 {
+                            text-align: center;
+                            font-family: OpenSansBold;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 2.5rem;
+                            letter-spacing: 0.105em;
+                            color: #000000;
+                        }
+                    }
+
+                    .price {
+                        position: relative;
+                        margin-top: 1rem;
+                        display: flex;
+                        flex-wrap: nowrap;
+
+                        .sale-price {
+                            margin: 0 auto;
+                            font-family: OpenSansLight;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 1.3rem;
+                            letter-spacing: 0.105em;
+                            text-decoration-line: line-through;
+                            color: #969696;
+                        }
+
+                        .normal-price {
+                            margin: 0 auto;
+                            font-family: OpenSansLight;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 1.3rem;
+                            letter-spacing: 0.105em;
+                            color: black;
+                        }
+                    }
+
+                    .more-btn {
+                        margin: 0 auto;
+                        margin-top: 2rem;
+                        text-align: center;
+                        padding-top: 0.8rem;
+                        width: 25rem;
+                        height: 6rem;
+                        border: .3rem solid #5198A6;
+                        box-sizing: border-box;
+                        font-family: Open Sans;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 3rem;
+                        line-height: 123.68%;
+                        letter-spacing: -0.045em;
+                        color: #5198A6;
+                        transition: .2s ease-in-out;
+
+                        &:hover {
+                            background: #5198A6;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+
+        .back-btn {
+            margin: 0 auto;
+            margin-top: 10rem;
+            padding-top: 1rem;
+            width: 25rem;
+            height: 5rem;
+            border: .3rem solid #5198A6;
+            background: #5198A6;
+            box-shadow: 0rem .7rem .4rem rgba(0, 0, 0, 0.25);
+            text-align: center;
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 3.4rem;
+            line-height: 123.68%;
+            letter-spacing: 0.04em;
+            color: #FFFFFF;
+            transition: .2s ease-in-out;
+
+            &:hover {
+                border: .3rem solid #5198A6;
+                background: none;
+                color: #5198A6;
+            }
+        }
+    }
+
+    footer {
+        margin-top: 2rem;
+        width: 100%;
+        background: #6A6A6A;
+        text-align: center;
+        font-family: Teplo;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1rem;
+        color: #FFFFFF;
+    }
+}
+
+//Medium small devices (Mobile M)
+@media (min-width: 321px) and (max-width: 375px) {
+    header {
+        .title {
+            h1 {
+                font-family: Teplo;
+                font-size: 6rem;
+                margin-top: 4rem;
+                margin-left: 2rem;
+            }
+
+            a {
+                display: none;
+            }
+        }
+
+        .contact-menu {
+            display: none;
+        }
+
+        .burger {
+            position: absolute;
+            left: 33rem;
+            top: 6.5rem;
+            width: 3.5rem;
+            height: 3.5rem;
+
+            .burger-btn {
+                position: absolute;
+                width: inherit;
+                height: inherit;
+                background: url('../resources_/imgs/system/burger.svg');
+                background-size: cover;
+                transition: .2s ease-in-out;
+            }
+
+            &.active {
+                .contacts {
+                    display: block;
+                }
+
+                .burger-btn {
+                    transform: rotate(90deg);
+                }
+            }
+
+            .contacts {
+                position: absolute;
+                display: none;
+                top: 5rem;
+                right: -0.85rem;
+                width: 375px;
+                background: #5198A6;
+
+                .telephone {
+                    text-align: center;
+                    height: 5rem;
+                    font-family: Open Sans;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 2rem;
+                    line-height: 2.5rem;
+                    color: white;
+
+                    &:hover {
+                        background: #00d5ff;
+                    }
+                }
+
+                .instagram {
+                    display: flex;
+                    height: 5rem;
+
+                    img {
+                        margin-left: 10rem;
+                        width: 5rem;
+                        height: 5rem;
+                    }
+
+                    p {
+                        margin-top: 1rem;
+                        text-align: center;
+                        height: 5rem;
+                        font-family: Open Sans;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 2rem;
+                        line-height: 2.5rem;
+                        color: white;
+                    }
+
+                    &:hover {
+                        background: #00d5ff;
+                    }
+                }
+
+                .whatsapp {
+                    display: flex;
+                    height: 5rem;
+
+                    img {
+                        margin-left: 10rem;
+                        width: 5rem;
+                        height: 5rem;
+                    }
+
+                    p {
+                        margin-top: 1rem;
+                        text-align: center;
+                        height: 5rem;
+                        font-family: Open Sans;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 2rem;
+                        line-height: 2.5rem;
+                        color: white;
+                    }
+
+                    &:hover {
+                        background: #00d5ff;
+                    }
+                }
+
+                .telegram {
+                    display: flex;
+                    height: 5rem;
+
+                    img {
+                        margin-left: 10rem;
+                        width: 5rem;
+                        height: 5rem;
+                    }
+
+                    p {
+                        margin-top: 1rem;
+                        text-align: center;
+                        height: 5rem;
+                        font-family: Open Sans;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 2rem;
+                        line-height: 2.5rem;
+                        color: white;
+                    }
+
+                    &:hover {
+                        background: #00d5ff;
+                    }
+                }
+            }
+        }
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+
+        .main_photo {
+            margin: 0 auto;
+            border-radius: 10%;
+            width: 30rem;
+            height: 25rem;
+            background: url('../resources_/imgs/product_info/gallery/527A6419.png');
+            background-size: cover;
+
+            &:hover {
+                background-size: 150%;
+            }
+
+            &.sale {
+                &:after {
+                    content: '';
+                    position: absolute;
+                    top: 1rem;
+                    left: 23.5rem;
+                    width: 10rem;
+                    height: 3rem;
+                    background: url('../resources_/imgs/system/SALE-ICON.svg');
+                    background-size: cover;
+                    transform: rotate(13deg);
+                }
+            }
+        }
+
+        .description {
+            .title {
+                margin-top: 1rem;
+                text-align: center;
+                font-family: OpenSansLight;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 2rem;
+                color: #000000;
+            }
+
+            .price {
+                margin-top: 1.5rem;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-around;
+
+                .sale {
+                    h1 {
+                        font-family: OpenSansLight;
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 2.3rem;
+                        letter-spacing: 0.105em;
+                        text-decoration-line: line-through;
+                        color: #969696;
+                    }
+                }
+
+                .normal_price {
+                    h1 {
+                        margin-left: 20px;  
+                        font-family: OpenSansLight;
+                        font-weight: 300;
+                        font-size: 2.3rem;
+                        letter-spacing: 0.105em;
+                        text-decoration-line: underline;
+                        color: #000000;
+                    }
+                }
+            }
+
+            .text {
+                margin-top: 3rem;
+
+                h1 {
+                    margin-top: 1rem;
+                    text-align: center;
+                    font-family: OpenSansBold;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 2.3rem;
+                    color: #000000;
+                }
+
+                p {
+                    margin-top: 1.5rem;
+                    margin-left: 0.5rem;
+                    font-family: OpenSansLight;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 1.5rem;
+                    line-height: 2.5rem;
+                    letter-spacing: 0.105em;
+                    color: #0B0B0B;
+
+                    span {
+                        font-family: OpenSansBold;
+                    }
+                }
+            }
+        }
+
+        .delimiter {
+            margin-top: 1rem;
+            width: inherit;
+            height: .5rem;
+            background: #C4C4C4;
+        }
+
+        .more-products {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .title {
+                margin-top: 1.5rem;
+                align-self: center;
+
+                h1 {
+                    font-family: OpenSansBold;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 3rem;
+                    text-decoration-line: underline;
+                    color: #000000;
+                }
+            }
+
+            .products {
+                margin-top: 2rem;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                justify-content: center;
+
+                .product-1 {
+                    margin: 0 auto;
+
+                    &.sale {
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            margin-top: 1rem;
+                            margin-left: 19.8rem;
+                            width: 10rem;
+                            height: 3rem;
+                            background: url('../resources_/imgs/system/SALE-ICON.svg');
+                            background-size: cover;
+                            transform: rotate(13deg);
+                        }
+                    }
+
+                    img {
+                        border-radius: 10%;
+                        width: 30rem;
+                        height: 25rem;
+                    }
+
+                    .title {
+                        margin: 0 auto;
+
+                        h2 {
+                            text-align: center;
+                            font-family: OpenSansBold;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 2.5rem;
+                            letter-spacing: 0.105em;
+                            color: #000000;
+                        }
+                    }
+
+                    .price {
+                        position: relative;
+                        margin-top: 1rem;
+                        display: flex;
+                        flex-wrap: nowrap;
+
+                        .sale-price {
+                            margin: 0 auto;
+                            font-family: OpenSansLight;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 1.3rem;
+                            letter-spacing: 0.105em;
+                            text-decoration-line: line-through;
+                            color: #969696;
+                        }
+
+                        .normal-price {
+                            margin: 0 auto;
+                            font-family: OpenSansLight;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 1.3rem;
+                            letter-spacing: 0.105em;
+                            color: black;
+                        }
+                    }
+
+                    .more-btn {
+                        margin: 0 auto;
+                        margin-top: 2rem;
+                        text-align: center;
+                        padding-top: 0.8rem;
+                        width: 25rem;
+                        height: 6rem;
+                        border: .3rem solid #5198A6;
+                        box-sizing: border-box;
+                        font-family: Open Sans;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 3rem;
+                        line-height: 123.68%;
+                        letter-spacing: -0.045em;
+                        color: #5198A6;
+                        transition: .2s ease-in-out;
+
+                        &:hover {
+                            background: #5198A6;
+                            color: white;
+                        }
+                    }
+                }
+
+                .product-2 {
+                    margin: 0 auto;
+                    margin-top: 10rem;
+
+                    &.sale {
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            margin-top: 1rem;
+                            margin-left: 19.8rem;
+                            width: 10rem;
+                            height: 3rem;
+                            background: url('../resources_/imgs/system/SALE-ICON.svg');
+                            background-size: cover;
+                            transform: rotate(13deg);
+                        }
+                    }
+
+                    img {
+                        border-radius: 10%;
+                        width: 30rem;
+                        height: 25rem;
+                    }
+
+                    .title {
+                        margin: 0 auto;
+
+                        h2 {
+                            text-align: center;
+                            font-family: OpenSansBold;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 2.5rem;
+                            letter-spacing: 0.105em;
+                            color: #000000;
+                        }
+                    }
+
+                    .price {
+                        position: relative;
+                        margin-top: 1rem;
+                        display: flex;
+                        flex-wrap: nowrap;
+
+                        .sale-price {
+                            margin: 0 auto;
+                            font-family: OpenSansLight;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 1.3rem;
+                            letter-spacing: 0.105em;
+                            text-decoration-line: line-through;
+                            color: #969696;
+                        }
+
+                        .normal-price {
+                            margin: 0 auto;
+                            font-family: OpenSansLight;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 1.3rem;
+                            letter-spacing: 0.105em;
+                            color: black;
+                        }
+                    }
+
+                    .more-btn {
+                        margin: 0 auto;
+                        margin-top: 2rem;
+                        text-align: center;
+                        padding-top: 0.8rem;
+                        width: 25rem;
+                        height: 6rem;
+                        border: .3rem solid #5198A6;
+                        box-sizing: border-box;
+                        font-family: Open Sans;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 3rem;
+                        line-height: 123.68%;
+                        letter-spacing: -0.045em;
+                        color: #5198A6;
+                        transition: .2s ease-in-out;
+
+                        &:hover {
+                            background: #5198A6;
+                            color: white;
+                        }
+                    }
+                }
+
+                .product-3 {
+                    margin: 0 auto;
+                    margin-top: 10rem;
+
+                    &.sale {
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            margin-top: 1rem;
+                            margin-left: 19.8rem;
+                            width: 10rem;
+                            height: 3rem;
+                            background: url('../resources_/imgs/system/SALE-ICON.svg');
+                            background-size: cover;
+                            transform: rotate(13deg);
+                        }
+                    }
+
+                    img {
+                        border-radius: 10%;
+                        width: 30rem;
+                        height: 25rem;
+                    }
+
+                    .title {
+                        margin: 0 auto;
+
+                        h2 {
+                            text-align: center;
+                            font-family: OpenSansBold;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 2.5rem;
+                            letter-spacing: 0.105em;
+                            color: #000000;
+                        }
+                    }
+
+                    .price {
+                        position: relative;
+                        margin-top: 1rem;
+                        display: flex;
+                        flex-wrap: nowrap;
+
+                        .sale-price {
+                            margin: 0 auto;
+                            font-family: OpenSansLight;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 1.3rem;
+                            letter-spacing: 0.105em;
+                            text-decoration-line: line-through;
+                            color: #969696;
+                        }
+
+                        .normal-price {
+                            margin: 0 auto;
+                            font-family: OpenSansLight;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 1.3rem;
+                            letter-spacing: 0.105em;
+                            color: black;
+                        }
+                    }
+
+                    .more-btn {
+                        margin: 0 auto;
+                        margin-top: 2rem;
+                        text-align: center;
+                        padding-top: 0.8rem;
+                        width: 25rem;
+                        height: 6rem;
+                        border: .3rem solid #5198A6;
+                        box-sizing: border-box;
+                        font-family: Open Sans;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 3rem;
+                        line-height: 123.68%;
+                        letter-spacing: -0.045em;
+                        color: #5198A6;
+                        transition: .2s ease-in-out;
+
+                        &:hover {
+                            background: #5198A6;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+
+        .back-btn {
+            margin: 0 auto;
+            margin-top: 10rem;
+            padding-top: 1rem;
+            width: 25rem;
+            height: 5rem;
+            border: .3rem solid #5198A6;
+            background: #5198A6;
+            box-shadow: 0rem .7rem .4rem rgba(0, 0, 0, 0.25);
+            text-align: center;
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 3.4rem;
+            line-height: 123.68%;
+            letter-spacing: 0.04em;
+            color: #FFFFFF;
+            transition: .2s ease-in-out;
+
+            &:hover {
+                border: .3rem solid #5198A6;
+                background: none;
+                color: #5198A6;
+            }
+        }
+    }
+
+    footer {
+        margin-top: 2rem;
+        width: 100%;
+        background: #6A6A6A;
+        text-align: center;
+        font-family: Teplo;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1rem;
+        color: #FFFFFF;
+    }
+}
+
+//Large small devices (Mobile L)
+@media (min-width: 376px) and (max-width: 425px) {
+    header {
+        .title {
+            h1 {
+                font-family: Teplo;
+                font-size: 7rem;
+                margin-top: 2rem;
+                margin-left: 2rem;
+            }
+
+            a {
+                display: none;
+            }
+        }
+
+        .contact-menu {
+            display: none;
+        }
+
+        .burger {
+            position: absolute;
+            left: 37rem;
+            top: 5rem;
+            width: 4rem;
+            height: 4rem;
+
+            .burger-btn {
+                position: absolute;
+                width: inherit;
+                height: inherit;
+                background: url('../resources_/imgs/system/burger.svg');
+                background-size: cover;
+                transition: .2s ease-in-out;
+            }
+
+            &.active {
+                .contacts {
+                    display: block;
+                }
+
+                .burger-btn {
+                    transform: rotate(90deg);
+                }
+            }
+
+            .contacts {
+                position: absolute;
+                display: none;
+                top: 5rem;
+                right: -1.4rem;
+                width: 425px;
+                background: #5198A6;
+
+                .telephone {
+                    text-align: center;
+                    height: 5rem;
+                    font-family: Open Sans;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 2rem;
+                    line-height: 2.5rem;
+                    color: white;
+
+                    &:hover {
+                        background: #00d5ff;
+                    }
+                }
+
+                .instagram {
+                    display: flex;
+                    height: 5rem;
+
+                    img {
+                        margin-left: 13rem;
+                        width: 5rem;
+                        height: 5rem;
+                    }
+
+                    p {
+                        margin-top: 1rem;
+                        text-align: center;
+                        height: 5rem;
+                        font-family: Open Sans;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 2rem;
+                        line-height: 2.5rem;
+                        color: white;
+                    }
+
+                    &:hover {
+                        background: #00d5ff;
+                    }
+                }
+
+                .whatsapp {
+                    display: flex;
+                    height: 5rem;
+
+                    img {
+                        margin-left: 13rem;
+                        width: 5rem;
+                        height: 5rem;
+                    }
+
+                    p {
+                        margin-top: 1rem;
+                        text-align: center;
+                        height: 5rem;
+                        font-family: Open Sans;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 2rem;
+                        line-height: 2.5rem;
+                        color: white;
+                    }
+
+                    &:hover {
+                        background: #00d5ff;
+                    }
+                }
+
+                .telegram {
+                    display: flex;
+                    height: 5rem;
+
+                    img {
+                        margin-left: 13rem;
+                        width: 5rem;
+                        height: 5rem;
+                    }
+
+                    p {
+                        margin-top: 1rem;
+                        text-align: center;
+                        height: 5rem;
+                        font-family: Open Sans;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 2rem;
+                        line-height: 2.5rem;
+                        color: white;
+                    }
+
+                    &:hover {
+                        background: #00d5ff;
+                    }
+                }
+            }
+        }
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+
+        .main_photo {
+            margin: 0 auto;
+            border-radius: 10%;
+            width: 30rem;
+            height: 25rem;
+            background: url('../resources_/imgs/product_info/gallery/527A6419.png');
+            background-size: cover;
+
+            &:hover {
+                background-size: 150%;
+            }
+
+            &.sale {
+                &:after {
+                    content: '';
+                    position: absolute;
+                    top: 1rem;
+                    left: 26rem;
+                    width: 10rem;
+                    height: 3rem;
+                    background: url('../resources_/imgs/system/SALE-ICON.svg');
+                    background-size: cover;
+                    transform: rotate(13deg);
+                }
+            }
+        }
+
+        .description {
+            .title {
+                margin-top: 1rem;
+                text-align: center;
+                font-family: OpenSansLight;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 2rem;
+                color: #000000;
+            }
+
+            .price {
+                margin-top: 1.5rem;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-around;
+
+                .sale {
+                    h1 {
+                        font-family: OpenSansLight;
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 2.3rem;
+                        letter-spacing: 0.105em;
+                        text-decoration-line: line-through;
+                        color: #969696;
+                    }
+                }
+
+                .normal_price {
+                    h1 {
+                        margin-left: 20px;
+                        font-family: OpenSansLight;
+                        font-weight: 300;
+                        font-size: 2.3rem;
+                        letter-spacing: 0.105em;
+                        text-decoration-line: underline;
+                        color: #000000;
+                    }
+                }
+            }
+
+            .text {
+                margin-top: 3rem;
+
+                h1 {
+                    margin-top: 1rem;
+                    text-align: center;
+                    font-family: OpenSansBold;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 2.3rem;
+                    color: #000000;
+                }
+
+                p {
+                    margin-top: 1.5rem;
+                    margin-left: 0.5rem;
+                    font-family: OpenSansLight;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 1.5rem;
+                    line-height: 2.5rem;
+                    letter-spacing: 0.105em;
+                    color: #0B0B0B;
+
+                    span {
+                        font-family: OpenSansBold;
+                    }
+                }
+            }
+        }
+
+        .delimiter {
+            margin-top: 1rem;
+            width: inherit;
+            height: .5rem;
+            background: #C4C4C4;
+        }
+
+        .more-products {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .title {
+                margin-top: 1.5rem;
+                align-self: center;
+
+                h1 {
+                    font-family: OpenSansBold;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 3rem;
+                    text-decoration-line: underline;
+                    color: #000000;
+                }
+            }
+
+            .products {
+                margin-top: 2rem;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                justify-content: center;
+
+                .product-1 {
+                    margin: 0 auto;
+
+                    &.sale {
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            margin-top: 1rem;
+                            margin-left: 19.8rem;
+                            width: 10rem;
+                            height: 3rem;
+                            background: url('../resources_/imgs/system/SALE-ICON.svg');
+                            background-size: cover;
+                            transform: rotate(13deg);
+                        }
+                    }
+
+                    img {
+                        border-radius: 10%;
+                        width: 30rem;
+                        height: 25rem;
+                    }
+
+                    .title {
+                        margin: 0 auto;
+
+                        h2 {
+                            text-align: center;
+                            font-family: OpenSansBold;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 2.5rem;
+                            letter-spacing: 0.105em;
+                            color: #000000;
+                        }
+                    }
+
+                    .price {
+                        position: relative;
+                        margin-top: 1rem;
+                        display: flex;
+                        flex-wrap: nowrap;
+
+                        .sale-price {
+                            margin: 0 auto;
+                            font-family: OpenSansLight;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 1.3rem;
+                            letter-spacing: 0.105em;
+                            text-decoration-line: line-through;
+                            color: #969696;
+                        }
+
+                        .normal-price {
+                            margin: 0 auto;
+                            font-family: OpenSansLight;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 1.3rem;
+                            letter-spacing: 0.105em;
+                            color: black;
+                        }
+                    }
+
+                    .more-btn {
+                        margin: 0 auto;
+                        margin-top: 2rem;
+                        text-align: center;
+                        padding-top: 0.8rem;
+                        width: 25rem;
+                        height: 6rem;
+                        border: .3rem solid #5198A6;
+                        box-sizing: border-box;
+                        font-family: Open Sans;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 3rem;
+                        line-height: 123.68%;
+                        letter-spacing: -0.045em;
+                        color: #5198A6;
+                        transition: .2s ease-in-out;
+
+                        &:hover {
+                            background: #5198A6;
+                            color: white;
+                        }
+                    }
+                }
+
+                .product-2 {
+                    margin: 0 auto;
+                    margin-top: 10rem;
+
+                    &.sale {
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            margin-top: 1rem;
+                            margin-left: 19.8rem;
+                            width: 10rem;
+                            height: 3rem;
+                            background: url('../resources_/imgs/system/SALE-ICON.svg');
+                            background-size: cover;
+                            transform: rotate(13deg);
+                        }
+                    }
+
+                    img {
+                        border-radius: 10%;
+                        width: 30rem;
+                        height: 25rem;
+                    }
+
+                    .title {
+                        margin: 0 auto;
+
+                        h2 {
+                            text-align: center;
+                            font-family: OpenSansBold;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 2.5rem;
+                            letter-spacing: 0.105em;
+                            color: #000000;
+                        }
+                    }
+
+                    .price {
+                        position: relative;
+                        margin-top: 1rem;
+                        display: flex;
+                        flex-wrap: nowrap;
+
+                        .sale-price {
+                            margin: 0 auto;
+                            font-family: OpenSansLight;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 1.3rem;
+                            letter-spacing: 0.105em;
+                            text-decoration-line: line-through;
+                            color: #969696;
+                        }
+
+                        .normal-price {
+                            margin: 0 auto;
+                            font-family: OpenSansLight;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 1.3rem;
+                            letter-spacing: 0.105em;
+                            color: black;
+                        }
+                    }
+
+                    .more-btn {
+                        margin: 0 auto;
+                        margin-top: 2rem;
+                        text-align: center;
+                        padding-top: 0.8rem;
+                        width: 25rem;
+                        height: 6rem;
+                        border: .3rem solid #5198A6;
+                        box-sizing: border-box;
+                        font-family: Open Sans;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 3rem;
+                        line-height: 123.68%;
+                        letter-spacing: -0.045em;
+                        color: #5198A6;
+                        transition: .2s ease-in-out;
+
+                        &:hover {
+                            background: #5198A6;
+                            color: white;
+                        }
+                    }
+                }
+
+                .product-3 {
+                    margin: 0 auto;
+                    margin-top: 10rem;
+
+                    &.sale {
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            margin-top: 1rem;
+                            margin-left: 19.8rem;
+                            width: 10rem;
+                            height: 3rem;
+                            background: url('../resources_/imgs/system/SALE-ICON.svg');
+                            background-size: cover;
+                            transform: rotate(13deg);
+                        }
+                    }
+
+                    img {
+                        border-radius: 10%;
+                        width: 30rem;
+                        height: 25rem;
+                    }
+
+                    .title {
+                        margin: 0 auto;
+
+                        h2 {
+                            text-align: center;
+                            font-family: OpenSansBold;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 2.5rem;
+                            letter-spacing: 0.105em;
+                            color: #000000;
+                        }
+                    }
+
+                    .price {
+                        position: relative;
+                        margin-top: 1rem;
+                        display: flex;
+                        flex-wrap: nowrap;
+
+                        .sale-price {
+                            margin: 0 auto;
+                            font-family: OpenSansLight;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 1.3rem;
+                            letter-spacing: 0.105em;
+                            text-decoration-line: line-through;
+                            color: #969696;
+                        }
+
+                        .normal-price {
+                            margin: 0 auto;
+                            font-family: OpenSansLight;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 1.3rem;
+                            letter-spacing: 0.105em;
+                            color: black;
+                        }
+                    }
+
+                    .more-btn {
+                        margin: 0 auto;
+                        margin-top: 2rem;
+                        text-align: center;
+                        padding-top: 0.8rem;
+                        width: 25rem;
+                        height: 6rem;
+                        border: .3rem solid #5198A6;
+                        box-sizing: border-box;
+                        font-family: Open Sans;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 3rem;
+                        line-height: 123.68%;
+                        letter-spacing: -0.045em;
+                        color: #5198A6;
+                        transition: .2s ease-in-out;
+
+                        &:hover {
+                            background: #5198A6;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+
+        .back-btn {
+            margin: 0 auto;
+            margin-top: 10rem;
+            padding-top: 1rem;
+            width: 25rem;
+            height: 5rem;
+            border: .3rem solid #5198A6;
+            background: #5198A6;
+            box-shadow: 0rem .7rem .4rem rgba(0, 0, 0, 0.25);
+            text-align: center;
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 3.4rem;
+            line-height: 123.68%;
+            letter-spacing: 0.04em;
+            color: #FFFFFF;
+            transition: .2s ease-in-out;
+
+            &:hover {
+                border: .3rem solid #5198A6;
+                background: none;
+                color: #5198A6;
+            }
+        }
+    }
+
+    footer {
+        margin-top: 2rem;
+        width: 100%;
+        background: #6A6A6A;
+        text-align: center;
+        font-family: Teplo;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1rem;
+        color: #FFFFFF;
+    }
+}
+
+//Tablet
+@media (min-width: 426px) and (max-width: 768px) {
+    header {
+        .burger {
+            display: none;
+        }
+
+        .title {
+            width: 30rem;
+            height: inherit;
+            display: flex;
+            flex-direction: column;
+            margin-left: 30%;
+
+            h1 {
+                text-align: center;
+                font-family: Teplo;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 6rem;
+                line-height: 8rem;
+                color: #000000;
+            }
+
+            a {
+                margin-top: -1rem;
+                text-align: center;
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 1.5rem;
+                line-height: 2.5rem;
+                text-decoration-line: underline;
+                color: #5698A5;
+            }
+        }
+
+        .contact-menu {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            top: 0;
+            left: 75%;
+            width: 20rem;
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 1.5rem;
+            line-height: 2.5rem;
+            color: #767676;
+
+            .number {
+                text-align: center;
+            }
+
+            .networks {
+                margin-top: 0.5rem;
+                margin-left: 1rem;
+                font-size: 0.7em;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+
+                .instagram {
+                    display: flex;
+                    flex-direction: column;
+                    transition: .1s ease-in-out;
+
+                    &:hover {
+                        border-bottom: .3rem solid #767676;
+                    }
+                }
+
+                .whatsapp {
+                    margin-left: 1rem;
+                    margin-top: -0.3rem;
+                    display: flex;
+                    flex-direction: column;
+                    transition: .1s ease-in-out;
+
+                    &:hover {
+                        border-bottom: .3rem solid #767676;
+                    }
+                }
+
+                .telegram {
+                    margin-left: 1rem;
+                    margin-top: -0.5rem;
+                    display: flex;
+                    flex-direction: column;
+                    transition: .1s ease-in-out;
+
+                    &:hover {
+                        border-bottom: .3rem solid #767676;
+                    }
+                }
+            }
+        }
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+
+        .main_photo {
+            margin: 0 auto;
+            border-radius: 10%;
+            width: 55rem;
+            height: 38rem;
+            background: url('../resources_/imgs/product_info/gallery/527A6419.png');
+            background-size: cover;
+
+            &:hover {
+                background-size: 150%;
+            }
+
+            &.sale {
+                &::before {
+                    content: '';
+                    position: absolute;
+                    margin-left: 38.6rem;
+                    margin-top: 1.8rem;
+                    width: 16rem;
+                    height: 5rem;
+                    background: url('../resources_/imgs/system/SALE-ICON.svg');
+                    background-size: cover;
+                    transform: rotate(13deg);
+                }
+            }
+        }
+
+        .description {
+            .title {
+                margin-top: 1rem;
+                text-align: center;
+                font-family: OpenSansLight;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 2rem;
+                color: #000000;
+            }
+
+            .price {
+                margin-top: 1.5rem;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-around;
+
+                .sale {
+                    h1 {
+                        font-family: OpenSansLight;
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 2.3rem;
+                        letter-spacing: 0.105em;
+                        text-decoration-line: line-through;
+                        color: #969696;
+                    }
+                }
+
+                .normal_price {
+                    h1 {
+                        margin-left: 20px;
+                        font-family: OpenSansLight;
+                        font-weight: 300;
+                        font-size: 2.3rem;
+                        letter-spacing: 0.105em;
+                        text-decoration-line: underline;
+                        color: #000000;
+                    }
+                }
+            }
+
+            .text {
+                margin-top: 3rem;
+
+                h1 {
+                    margin-top: 1rem;
+                    text-align: center;
+                    font-family: OpenSansBold;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 2.3rem;
+                    color: #000000;
+                }
+
+                p {
+                    margin-top: 1.5rem;
+                    margin-left: 0.5rem;
+                    font-family: OpenSansLight;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 1.5rem;
+                    line-height: 2.5rem;
+                    letter-spacing: 0.105em;
+                    color: #0B0B0B;
+
+                    span {
+                        font-family: OpenSansBold;
+                    }
+                }
+            }
+        }
+
+        .delimiter {
+            margin-top: 1rem;
+            width: inherit;
+            height: .5rem;
+            background: #C4C4C4;
+        }
+
+        .more-products {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .title {
+                margin-top: 1.5rem;
+                align-self: center;
+
+                h1 {
+                    font-family: OpenSansBold;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 3rem;
+                    text-decoration-line: underline;
+                    color: #000000;
+                }
+            }
+
+            .products {
+                margin-top: 2rem;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                justify-content: center;
+
+                .product-1 {
+                    margin: 0 auto;
+
+                    &.sale {
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            margin-top: 1.6rem;
+                            margin-left: 33.6rem;
+                            width: 16rem;
+                            height: 5rem;
+                            background: url('../resources_/imgs/system/SALE-ICON.svg');
+                            background-size: cover;
+                            transform: rotate(13deg);
+                        }
+                    }
+
+                    img {
+                        border-radius: 10%;
+                        width: 50rem;
+                        height: 34rem;
+                    }
+
+                    .title {
+                        margin: 0 auto;
+
+                        h2 {
+                            text-align: center;
+                            font-family: OpenSansBold;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 2.5rem;
+                            letter-spacing: 0.105em;
+                            color: #000000;
+                        }
+                    }
+
+                    .price {
+                        position: relative;
+                        margin-top: 1rem;
+                        display: flex;
+                        flex-wrap: nowrap;
+
+                        .sale-price {
+                            margin: 0 auto;
+                            font-family: OpenSansLight;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 1.3rem;
+                            letter-spacing: 0.105em;
+                            text-decoration-line: line-through;
+                            color: #969696;
+                        }
+
+                        .normal-price {
+                            margin: 0 auto;
+                            font-family: OpenSansLight;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 1.3rem;
+                            letter-spacing: 0.105em;
+                            color: black;
+                        }
+                    }
+
+                    .more-btn {
+                        margin: 0 auto;
+                        margin-top: 2rem;
+                        text-align: center;
+                        padding-top: 0.8rem;
+                        width: 25rem;
+                        height: 6rem;
+                        border: .3rem solid #5198A6;
+                        box-sizing: border-box;
+                        font-family: Open Sans;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 3rem;
+                        line-height: 123.68%;
+                        letter-spacing: -0.045em;
+                        color: #5198A6;
+                        transition: .2s ease-in-out;
+
+                        &:hover {
+                            background: #5198A6;
+                            color: white;
+                        }
+                    }
+                }
+
+                .product-2 {
+                    margin: 0 auto;
+                    margin-top: 10rem;
+
+                    &.sale {
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            margin-top: 1.6rem;
+                            margin-left: 33.6rem;
+                            width: 16rem;
+                            height: 5rem;
+                            background: url('../resources_/imgs/system/SALE-ICON.svg');
+                            background-size: cover;
+                            transform: rotate(13deg);
+                        }
+                    }
+
+                    img {
+                        border-radius: 10%;
+                        width: 50rem;
+                        height: 34rem;
+                    }
+
+                    .title {
+                        margin: 0 auto;
+
+                        h2 {
+                            text-align: center;
+                            font-family: OpenSansBold;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 2.5rem;
+                            letter-spacing: 0.105em;
+                            color: #000000;
+                        }
+                    }
+
+                    .price {
+                        position: relative;
+                        margin-top: 1rem;
+                        display: flex;
+                        flex-wrap: nowrap;
+
+                        .sale-price {
+                            margin: 0 auto;
+                            font-family: OpenSansLight;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 1.3rem;
+                            letter-spacing: 0.105em;
+                            text-decoration-line: line-through;
+                            color: #969696;
+                        }
+
+                        .normal-price {
+                            margin: 0 auto;
+                            font-family: OpenSansLight;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 1.3rem;
+                            letter-spacing: 0.105em;
+                            color: black;
+                        }
+                    }
+
+                    .more-btn {
+                        margin: 0 auto;
+                        margin-top: 2rem;
+                        text-align: center;
+                        padding-top: 0.8rem;
+                        width: 25rem;
+                        height: 6rem;
+                        border: .3rem solid #5198A6;
+                        box-sizing: border-box;
+                        font-family: Open Sans;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 3rem;
+                        line-height: 123.68%;
+                        letter-spacing: -0.045em;
+                        color: #5198A6;
+                        transition: .2s ease-in-out;
+
+                        &:hover {
+                            background: #5198A6;
+                            color: white;
+                        }
+                    }
+                }
+
+                .product-3 {
+                    margin: 0 auto;
+                    margin-top: 10rem;
+
+                    &.sale {
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            margin-top: 1.6rem;
+                            margin-left: 33.6rem;
+                            width: 16rem;
+                            height: 5rem;
+                            background: url('../resources_/imgs/system/SALE-ICON.svg');
+                            background-size: cover;
+                            transform: rotate(13deg);
+                        }
+                    }
+
+                    img {
+                        border-radius: 10%;
+                        width: 50rem;
+                        height: 34rem;
+                    }
+
+                    .title {
+                        margin: 0 auto;
+
+                        h2 {
+                            text-align: center;
+                            font-family: OpenSansBold;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 2.5rem;
+                            letter-spacing: 0.105em;
+                            color: #000000;
+                        }
+                    }
+
+                    .price {
+                        position: relative;
+                        margin-top: 1rem;
+                        display: flex;
+                        flex-wrap: nowrap;
+
+                        .sale-price {
+                            margin: 0 auto;
+                            font-family: OpenSansLight;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 1.3rem;
+                            letter-spacing: 0.105em;
+                            text-decoration-line: line-through;
+                            color: #969696;
+                        }
+
+                        .normal-price {
+                            margin: 0 auto;
+                            font-family: OpenSansLight;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 1.3rem;
+                            letter-spacing: 0.105em;
+                            color: black;
+                        }
+                    }
+
+                    .more-btn {
+                        margin: 0 auto;
+                        margin-top: 2rem;
+                        text-align: center;
+                        padding-top: 0.8rem;
+                        width: 25rem;
+                        height: 6rem;
+                        border: .3rem solid #5198A6;
+                        box-sizing: border-box;
+                        font-family: Open Sans;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 3rem;
+                        line-height: 123.68%;
+                        letter-spacing: -0.045em;
+                        color: #5198A6;
+                        transition: .2s ease-in-out;
+
+                        &:hover {
+                            background: #5198A6;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+
+        .back-btn {
+            margin: 0 auto;
+            margin-top: 10rem;
+            padding-top: 1rem;
+            width: 25rem;
+            height: 5rem;
+            border: .3rem solid #5198A6;
+            background: #5198A6;
+            box-shadow: 0rem .7rem .4rem rgba(0, 0, 0, 0.25);
+            text-align: center;
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 3.4rem;
+            line-height: 123.68%;
+            letter-spacing: 0.04em;
+            color: #FFFFFF;
+            transition: .2s ease-in-out;
+
+            &:hover {
+                border: .3rem solid #5198A6;
+                background: none;
+                color: #5198A6;
+            }
+        }
+    }
+
+    footer {
+        margin-top: 2rem;
+        width: 100%;
+        background: #6A6A6A;
+        text-align: center;
+        font-family: Teplo;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1rem;
+        color: #FFFFFF;
+    }
+}
+
+//Small PC
+@media (min-width: 769px) and (max-width: 1024px) {
+    header {
+        .burger {
+            display: none;
+        }
+
+        .title {
+            width: 30rem;
+            height: inherit;
+            display: flex;
+            flex-direction: column;
+            margin-left: 40%;
+
+            h1 {
+                text-align: center;
+                font-family: Teplo;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 6rem;
+                line-height: 8rem;
+                color: #000000;
+            }
+
+            a {
+                margin-top: -1rem;
+                text-align: center;
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 1.5rem;
+                line-height: 2.5rem;
+                text-decoration-line: underline;
+                color: #5698A5;
+            }
+        }
+
+        .contact-menu {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            top: 0;
+            left: 80%;
+            width: 20rem;
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 1.5rem;
+            line-height: 2.5rem;
+            color: #767676;
+
+            .number {
+                text-align: center;
+            }
+
+            .networks {
+                margin-top: 0.5rem;
+                margin-left: 1rem;
+                font-size: 0.7em;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+
+                .instagram {
+                    display: flex;
+                    flex-direction: column;
+                    transition: .1s ease-in-out;
+
+                    &:hover {
+                        border-bottom: .3rem solid #767676;
+                    }
+                }
+
+                .whatsapp {
+                    margin-left: 1rem;
+                    margin-top: -0.3rem;
+                    display: flex;
+                    flex-direction: column;
+                    transition: .1s ease-in-out;
+
+                    &:hover {
+                        border-bottom: .3rem solid #767676;
+                    }
+                }
+
+                .telegram {
+                    margin-left: 1rem;
+                    margin-top: -0.5rem;
+                    display: flex;
+                    flex-direction: column;
+                    transition: .1s ease-in-out;
+
+                    &:hover {
+                        border-bottom: .3rem solid #767676;
+                    }
+                }
+            }
+        }
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+
+        .main_photo {
+            margin: 0 auto;
+            border-radius: 10%;
+            width: 55rem;
+            height: 38rem;
+            background: url('../resources_/imgs/product_info/gallery/527A6419.png');
+            background-size: cover;
+
+            &:hover {
+                background-size: 150%;
+            }
+
+            &.sale {
+                &::before {
+                    content: '';
+                    position: absolute;
+                    margin-left: 38.6rem;
+                    margin-top: 1.8rem;
+                    width: 16rem;
+                    height: 5rem;
+                    background: url('../resources_/imgs/system/SALE-ICON.svg');
+                    background-size: cover;
+                    transform: rotate(13deg);
+                }
+            }
+        }
+
+        .description {
+            .title {
+                margin-top: 1rem;
+                text-align: center;
+                font-family: OpenSansLight;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 2rem;
+                color: #000000;
+            }
+
+            .price {
+                margin-top: 1.5rem;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-around;
+
+                .sale {
+                    h1 {
+                        font-family: OpenSansLight;
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 2.3rem;
+                        letter-spacing: 0.105em;
+                        text-decoration-line: line-through;
+                        color: #969696;
+                    }
+                }
+
+                .normal_price {
+                    h1 {
+                        margin-left: 20px;
+                        font-family: OpenSansLight;
+                        font-weight: 300;
+                        font-size: 2.3rem;
+                        letter-spacing: 0.105em;
+                        text-decoration-line: underline;
+                        color: #000000;
+                    }
+                }
+            }
+
+            .text {
+                margin-top: 3rem;
+
+                h1 {
+                    margin-top: 1rem;
+                    text-align: center;
+                    font-family: OpenSansBold;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 2.3rem;
+                    color: #000000;
+                }
+
+                p {
+                    margin-top: 1.5rem;
+                    margin-left: 2rem;
+                    margin-right: 2rem;
+                    font-family: OpenSansLight;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 1.5rem;
+                    line-height: 2.5rem;
+                    letter-spacing: 0.105em;
+                    color: #0B0B0B;
+
+                    span {
+                        font-family: OpenSansBold;
+                    }
+                }
+            }
+        }
+
+        .delimiter {
+            margin-top: 1rem;
+            width: inherit;
+            height: .5rem;
+            background: #C4C4C4;
+        }
+
+        .more-products {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .title {
+                margin-top: 1.5rem;
+                align-self: center;
+
+                h1 {
+                    font-family: OpenSansBold;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 3rem;
+                    text-decoration-line: underline;
+                    color: #000000;
+                }
+            }
+
+            .products {
+                margin-top: 2rem;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                justify-content: center;
+
+                .product-1 {
+                    margin: 0 auto;
+
+                    &.sale {
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            margin-top: 1.6rem;
+                            margin-left: 33.6rem;
+                            width: 16rem;
+                            height: 5rem;
+                            background: url('../resources_/imgs/system/SALE-ICON.svg');
+                            background-size: cover;
+                            transform: rotate(13deg);
+                        }
+                    }
+
+                    img {
+                        border-radius: 10%;
+                        width: 50rem;
+                        height: 34rem;
+                    }
+
+                    .title {
+                        margin: 0 auto;
+
+                        h2 {
+                            text-align: center;
+                            font-family: OpenSansBold;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 2.5rem;
+                            letter-spacing: 0.105em;
+                            color: #000000;
+                        }
+                    }
+
+                    .price {
+                        position: relative;
+                        margin-top: 1rem;
+                        display: flex;
+                        flex-wrap: nowrap;
+
+                        .sale-price {
+                            margin: 0 auto;
+                            font-family: OpenSansLight;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 1.3rem;
+                            letter-spacing: 0.105em;
+                            text-decoration-line: line-through;
+                            color: #969696;
+                        }
+
+                        .normal-price {
+                            margin: 0 auto;
+                            font-family: OpenSansLight;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 1.3rem;
+                            letter-spacing: 0.105em;
+                            color: black;
+                        }
+                    }
+
+                    .more-btn {
+                        margin: 0 auto;
+                        margin-top: 2rem;
+                        text-align: center;
+                        padding-top: 0.8rem;
+                        width: 25rem;
+                        height: 6rem;
+                        border: .3rem solid #5198A6;
+                        box-sizing: border-box;
+                        font-family: Open Sans;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 3rem;
+                        line-height: 123.68%;
+                        letter-spacing: -0.045em;
+                        color: #5198A6;
+                        transition: .2s ease-in-out;
+
+                        &:hover {
+                            background: #5198A6;
+                            color: white;
+                        }
+                    }
+                }
+
+                .product-2 {
+                    margin: 0 auto;
+                    margin-top: 10rem;
+
+                    &.sale {
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            margin-top: 1.6rem;
+                            margin-left: 33.6rem;
+                            width: 16rem;
+                            height: 5rem;
+                            background: url('../resources_/imgs/system/SALE-ICON.svg');
+                            background-size: cover;
+                            transform: rotate(13deg);
+                        }
+                    }
+
+                    img {
+                        border-radius: 10%;
+                        width: 50rem;
+                        height: 34rem;
+                    }
+
+                    .title {
+                        margin: 0 auto;
+
+                        h2 {
+                            text-align: center;
+                            font-family: OpenSansBold;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 2.5rem;
+                            letter-spacing: 0.105em;
+                            color: #000000;
+                        }
+                    }
+
+                    .price {
+                        position: relative;
+                        margin-top: 1rem;
+                        display: flex;
+                        flex-wrap: nowrap;
+
+                        .sale-price {
+                            margin: 0 auto;
+                            font-family: OpenSansLight;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 1.3rem;
+                            letter-spacing: 0.105em;
+                            text-decoration-line: line-through;
+                            color: #969696;
+                        }
+
+                        .normal-price {
+                            margin: 0 auto;
+                            font-family: OpenSansLight;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 1.3rem;
+                            letter-spacing: 0.105em;
+                            color: black;
+                        }
+                    }
+
+                    .more-btn {
+                        margin: 0 auto;
+                        margin-top: 2rem;
+                        text-align: center;
+                        padding-top: 0.8rem;
+                        width: 25rem;
+                        height: 6rem;
+                        border: .3rem solid #5198A6;
+                        box-sizing: border-box;
+                        font-family: Open Sans;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 3rem;
+                        line-height: 123.68%;
+                        letter-spacing: -0.045em;
+                        color: #5198A6;
+                        transition: .2s ease-in-out;
+
+                        &:hover {
+                            background: #5198A6;
+                            color: white;
+                        }
+                    }
+                }
+
+                .product-3 {
+                    margin: 0 auto;
+                    margin-top: 10rem;
+
+                    &.sale {
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            margin-top: 1.6rem;
+                            margin-left: 33.6rem;
+                            width: 16rem;
+                            height: 5rem;
+                            background: url('../resources_/imgs/system/SALE-ICON.svg');
+                            background-size: cover;
+                            transform: rotate(13deg);
+                        }
+                    }
+
+                    img {
+                        border-radius: 10%;
+                        width: 50rem;
+                        height: 34rem;
+                    }
+
+                    .title {
+                        margin: 0 auto;
+
+                        h2 {
+                            text-align: center;
+                            font-family: OpenSansBold;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 2.5rem;
+                            letter-spacing: 0.105em;
+                            color: #000000;
+                        }
+                    }
+
+                    .price {
+                        position: relative;
+                        margin-top: 1rem;
+                        display: flex;
+                        flex-wrap: nowrap;
+
+                        .sale-price {
+                            margin: 0 auto;
+                            font-family: OpenSansLight;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 1.3rem;
+                            letter-spacing: 0.105em;
+                            text-decoration-line: line-through;
+                            color: #969696;
+                        }
+
+                        .normal-price {
+                            margin: 0 auto;
+                            font-family: OpenSansLight;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 1.3rem;
+                            letter-spacing: 0.105em;
+                            color: black;
+                        }
+                    }
+
+                    .more-btn {
+                        margin: 0 auto;
+                        margin-top: 2rem;
+                        text-align: center;
+                        padding-top: 0.8rem;
+                        width: 25rem;
+                        height: 6rem;
+                        border: .3rem solid #5198A6;
+                        box-sizing: border-box;
+                        font-family: Open Sans;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 3rem;
+                        line-height: 123.68%;
+                        letter-spacing: -0.045em;
+                        color: #5198A6;
+                        transition: .2s ease-in-out;
+
+                        &:hover {
+                            background: #5198A6;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+
+        .back-btn {
+            margin: 0 auto;
+            margin-top: 10rem;
+            padding-top: 1rem;
+            width: 25rem;
+            height: 5rem;
+            border: .3rem solid #5198A6;
+            background: #5198A6;
+            box-shadow: 0rem .7rem .4rem rgba(0, 0, 0, 0.25);
+            text-align: center;
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 3.4rem;
+            line-height: 123.68%;
+            letter-spacing: 0.04em;
+            color: #FFFFFF;
+            transition: .2s ease-in-out;
+
+            &:hover {
+                border: .3rem solid #5198A6;
+                background: none;
+                color: #5198A6;
+            }
+        }
+    }
+
+    footer {
+        margin-top: 2rem;
+        width: 100%;
+        background: #6A6A6A;
+        text-align: center;
+        font-family: Teplo;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1rem;
+        color: #FFFFFF;
+    }
+}
+
+//Normal PC
+@media (min-width: 1025px) and (max-width: 1440px) {
+    header {
+        .burger {
+            display: none;
+        }
+
+        .title {
+            width: 30rem;
+            height: inherit;
+            display: flex;
+            flex-direction: column;
+            margin-left: 42%;
+
+            h1 {
+                text-align: center;
+                font-family: Teplo;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 6rem;
+                line-height: 8rem;
+                color: #000000;
+            }
+
+            a {
+                margin-top: -1rem;
+                text-align: center;
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 1.5rem;
+                line-height: 2.5rem;
+                text-decoration-line: underline;
+                color: #5698A5;
+            }
+        }
+
+        .contact-menu {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            top: 3rem;
+            left: 75%;
+            width: 35rem;
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 1.8rem;
+            line-height: 2.5rem;
+            color: #767676;
+
+            .number {
+                text-align: center;
+            }
+
+            .networks {
+                margin-top: 0.5rem;
+                margin-left: -1rem;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+
+                .instagram {
+                    display: flex;
+                    transition: .1s ease-in-out;
+
+                    &:hover {
+                        border-bottom: .3rem solid #767676;
+                    }
+
+                    img {
+                        width: 3rem;
+                        height: 3rem;
+                    }
+
+                    p {
+                        margin-top: .2rem;
+                        font-size: 1.8rem;
+                    }
+                }
+
+                .whatsapp {
+                    margin-left: 1rem;
+                    display: flex;
+                    transition: .1s ease-in-out;
+
+                    &:hover {
+                        border-bottom: .3rem solid #767676;
+                    }
+
+                    img {
+                        width: 3rem;
+                        height: 3rem;
+                    }
+
+                    p {
+                        margin-top: .2rem;
+                        font-size: 1.8rem;
+                    }
+                }
+
+                .telegram {
+                    margin-left: 1rem;
+                    display: flex;
+                    transition: .1s ease-in-out;
+
+                    &:hover {
+                        border-bottom: .3rem solid #767676;
+                    }
+
+                    img {
+                        width: 3rem;
+                        height: 3rem;
+                    }
+
+                    p {
+                        margin-top: .2rem;
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+
+        .current-product {
+            margin-top: 8rem;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+
+            .main_photo {
+                margin-left: 25rem;
+                width: 564rem;
+                height: 37rem;
+                background: url('../resources_/imgs/photos/527a8121.webp');
+                background-size: cover;
+
+                &.sale {
+                    &::before {
+                        position: absolute;
+                        margin-left: 22%;
+                        margin-top: 1.7rem;
+                        content: '';
+                        width: 16rem;
+                        height: 5rem;
+                        background: url('../resources_/imgs/system/SALE-ICON.svg');
+                        background-size: cover;
+                        transform: rotate(13deg);
+                    }
+                }
+
+                &:hover {
+                    background-size: 200%;
+                }
+            }
+
+            .description {
+                margin-left: 3rem;
+                width: 550%;
+
+                .title {
+                    h1 {
+                        font-family: OpenSansBold;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 3rem;
+                        color: #000000;
+                    }
+                }
+
+                .price {
+                    margin-top: 2rem;
+                    display: flex;
+                    flex-wrap: nowrap;
+
+                    .sale {
+                        h1 {
+                            font-family: OpenSansLight;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 2rem;
+                            line-height: 3.3rem;
+                            letter-spacing: 0.105em;
+                            text-decoration-line: line-through;
+                            color: #969696;
+                        }
+                    }
+
+                    .normal_price {
+                        margin-left: 2rem;
+
+                        h1 {
+                            margin-left: 20px;
+                            font-family: OpenSansLight;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 2rem;
+                            line-height: 3.3rem;
+                            letter-spacing: 0.105em;
+                            text-decoration-line: underline;
+                            color: black;
+                        }
+                    }
+                }
+
+                .text {
+                    margin-top: 2rem;
+
+                    h1 {
+                        font-family: OpenSansBold;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 2.4rem;
+                        line-height: 3.3rem;
+                        color: #000000;
+                    }
+
+                    p {
+                        margin-top: 2rem;
+                        margin-right: 14rem;
+                        font-family: OpenSansLight;
+                        font-style: normal;
+                        font-size: 1.5rem;
+                        font-weight: 300;
+                        letter-spacing: 0.105em;
+                        color: #0B0B0B;
+
+                        span {
+                            font-family: OpenSansBold;
+                        }
+                    }
+                }
+            }
+        }
+
+        .delimiter {
+            width: 80%;
+            height: .5rem;
+            margin: 0 auto;
+            margin-top: 2rem;
+            background: #C4C4C4;
+        }
+
+        .more-products {
+            margin: 0 auto;
+            width: 100%;
+            height: 100%;
+
+            .title {
+                font-family: OpenSansLight;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 1.8rem;
+                line-height: 5rem;
+                text-decoration-line: underline;
+                color: #000000;
+                margin-left: 10%;
+            }
+
+            .products {
+                padding-left: 14rem;
+                padding-right: 14rem;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                .product-1 {
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: nowrap;
+                    justify-content: center;
+
+                    img {
+                        width: 30rem;
+                        height: 23rem;
+                        border-radius: 3rem;
+                    }
+
+                    &.sale {
+                        &::before {
+                            position: absolute;
+                            content: '';
+                            width: 12rem;
+                            height: 4rem;
+                            margin-left: 17.5rem;
+                            margin-top: -13rem;
+                            transform: rotate(12.8deg);
+                            background: url('../resources_/imgs/system/SALE-ICON.svg');
+                            background-size: cover;
+                        }
+                    }
+
+                    .title {
+                        margin: 0 auto;
+
+                        h2 {
+                            font-family: OpenSansLight;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 2.7rem;
+                            line-height: 49px;
+                            letter-spacing: 0.105em;
+                            color: #000000;
+                        }
+                    }
+
+                    .price {
+                        margin: 0 auto;
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: nowrap;
+                        justify-content: space-around;
+
+                        .sale-price {
+                            margin: 0 auto;
+
+                            h2 {
+                                font-family: Open Sans;
+                                font-style: normal;
+                                font-weight: 300;
+                                font-size: 2rem;
+                                letter-spacing: 0.105em;
+                                text-decoration-line: line-through;
+                                color: #969696;
+                            }
+                        }
+
+                        .normal-price {
+                            margin: 0 auto;
+
+                            h2 {
+                                margin-left: 20px;
+                                font-family: Open Sans;
+                                font-style: normal;
+                                font-weight: 300;
+                                font-size: 2rem;
+                                letter-spacing: 0.105em;
+                                text-decoration-line: underline;
+                                color: black;
+                            }
+                        }
+                    }
+
+                    .more-btn {
+                        margin: 0 auto;
+                        margin-top: 1.5rem;
+                        padding-top: 1rem;
+                        width: 25rem;
+                        height: 6.5rem;
+                        border: .3rem solid #5198A6;
+                        box-sizing: border-box;
+                        text-align: center;
+                        font-family: Open Sans;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 3rem;
+                        line-height: 123.68%;
+                        letter-spacing: -0.045em;
+                        color: #5198A6;
+                        transition: .2s ease-in-out;
+
+                        &:hover {
+                            color: white;
+                            background: #5198A6;
+                        }
+                    }
+                }
+
+                .product-2 {
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: nowrap;
+                    justify-content: center;
+
+                    img {
+                        width: 30rem;
+                        height: 23rem;
+                        border-radius: 3rem;
+                    }
+
+                    &.sale {
+                        &::before {
+                            position: absolute;
+                            content: '';
+                            width: 12rem;
+                            height: 4rem;
+                            margin-left: 17.5rem;
+                            margin-top: -13rem;
+                            transform: rotate(12.8deg);
+                            background: url('../resources_/imgs/system/SALE-ICON.svg');
+                            background-size: cover;
+                        }
+                    }
+
+                    .title {
+                        margin: 0 auto;
+
+                        h2 {
+                            font-family: OpenSansLight;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 2.7rem;
+                            line-height: 49px;
+                            letter-spacing: 0.105em;
+                            color: #000000;
+                        }
+                    }
+
+                    .price {
+                        margin: 0 auto;
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: nowrap;
+                        justify-content: space-around;
+
+                        .sale-price {
+                            margin: 0 auto;
+
+                            h2 {
+                                font-family: Open Sans;
+                                font-style: normal;
+                                font-weight: 300;
+                                font-size: 2rem;
+                                letter-spacing: 0.105em;
+                                text-decoration-line: line-through;
+                                color: #969696;
+                            }
+                        }
+                        
+                        .normal-price {
+                            margin: 0 auto;
+                            h2 {
+                                font-family: Open Sans;
+                                font-style: normal;
+                                font-weight: 300;
+                                font-size: 2rem;
+                                letter-spacing: 0.105em;
+                                text-decoration-line: underline;
+                                color: black;
+                            }
+                        }
+                    }
+
+                    .more-btn {
+                        margin: 0 auto;
+                        margin-top: 1.5rem;
+                        padding-top: 1rem;
+                        width: 25rem;
+                        height: 6.5rem;
+                        border: .3rem solid #5198A6;
+                        box-sizing: border-box;
+                        text-align: center;
+                        font-family: Open Sans;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 3rem;
+                        line-height: 123.68%;
+                        letter-spacing: -0.045em;
+                        color: #5198A6;
+                        transition: .2s ease-in-out;
+
+                        &:hover {
+                            color: white;
+                            background: #5198A6;
+                        }
+                    }
+                }
+
+                .product-3 {
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: nowrap;
+                    justify-content: center;
+
+                    img {
+                        width: 30rem;
+                        height: 23rem;
+                        border-radius: 3rem;
+                    }
+
+                    &.sale {
+                        &::before {
+                            position: absolute;
+                            content: '';
+                            width: 12rem;
+                            height: 4rem;
+                            margin-left: 17.5rem;
+                            margin-top: -13rem;
+                            transform: rotate(12.8deg);
+                            background: url('../resources_/imgs/system/SALE-ICON.svg');
+                            background-size: cover;
+                        }
+                    }
+
+                    .title {
+                        margin: 0 auto;
+
+                        h2 {
+                            font-family: OpenSansLight;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 2.7rem;
+                            line-height: 49px;
+                            letter-spacing: 0.105em;
+                            color: #000000;
+                        }
+                    }
+
+                    .price {
+                        margin: 0 auto;
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: nowrap;
+                        justify-content: space-around;
+
+                        .sale-price {
+                            margin: 0 auto;
+
+                            h2 {
+                                font-family: Open Sans;
+                                font-style: normal;
+                                font-weight: 300;
+                                font-size: 2rem;
+                                letter-spacing: 0.105em;
+                                text-decoration-line: line-through;
+                                color: #969696;
+                            }
+                        }
+
+                        .normal-price {
+                            margin: 0 auto;
+
+                            h2 {
+                                font-family: Open Sans;
+                                font-style: normal;
+                                font-weight: 300;
+                                font-size: 2rem;
+                                letter-spacing: 0.105em;
+                                text-decoration-line: underline;
+                                color: black;
+                            }
+                        }
+                    }
+
+                    .more-btn {
+                        margin: 0 auto;
+                        margin-top: 1.5rem;
+                        padding-top: 1rem;
+                        width: 25rem;
+                        height: 6.5rem;
+                        border: .3rem solid #5198A6;
+                        box-sizing: border-box;
+                        text-align: center;
+                        font-family: Open Sans;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 3rem;
+                        line-height: 123.68%;
+                        letter-spacing: -0.045em;
+                        color: #5198A6;
+                        transition: .2s ease-in-out;
+
+                        &:hover {
+                            color: white;
+                            background: #5198A6;
+                        }
+                    }
+                }
+            }
+        }
+
+        .back-btn {
+            margin: 0 auto;
+            margin-top: 10rem;
+            padding-top: 1rem;
+            width: 30rem;
+            height: 6rem;
+            border: .3rem solid #5198A6;
+            background: #5198A6;
+            box-shadow: 0rem .7rem .4rem rgba(0, 0, 0, 0.25);
+            text-align: center;
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 3.4rem;
+            line-height: 123.68%;
+            letter-spacing: 0.04em;
+            color: #FFFFFF;
+            transition: .2s ease-in-out;
+
+            &:hover {
+                border: .3rem solid #5198A6;
+                background: none;
+                color: #5198A6;
+            }
+        }
+    }
+
+    footer {
+        margin-top: 2rem;
+        width: 100%;
+        background: #6A6A6A;
+        text-align: center;
+        font-family: Teplo;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1rem;
+        color: #FFFFFF;
+    }
+}
+
+//Large PC
+@media (min-width: 1441px) {
+    header {
+        .burger {
+            display: none;
+        }
+
+        .title {
+            width: 30rem;
+            height: inherit;
+            display: flex;
+            flex-direction: column;
+            margin-left: 42%;
+
+            h1 {
+                text-align: center;
+                font-family: Teplo;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 6rem;
+                line-height: 8rem;
+                color: #000000;
+            }
+
+            a {
+                margin-top: -1rem;
+                text-align: center;
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 1.5rem;
+                line-height: 2.5rem;
+                text-decoration-line: underline;
+                color: #5698A5;
+            }
+        }
+
+        .contact-menu {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            top: 1.8rem;
+            left: 80%;
+            width: 35rem;
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 1.8rem;
+            line-height: 2.5rem;
+            color: #767676;
+
+            .number {
+                text-align: center;
+            }
+
+            .networks {
+                margin-top: 0.5rem;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+
+                .instagram {
+                    display: flex;
+                    transition: .1s ease-in-out;
+
+                    &:hover {
+                        border-bottom: .3rem solid #767676;
+                    }
+
+                    img {
+                        width: 3rem;
+                        height: 3rem;
+                    }
+
+                    p {
+                        margin-top: .2rem;
+                        font-size: 1.8rem;
+                    }
+                }
+
+                .whatsapp {
+                    margin-left: 1rem;
+                    display: flex;
+                    transition: .1s ease-in-out;
+
+                    &:hover {
+                        border-bottom: .3rem solid #767676;
+                    }
+
+                    img {
+                        width: 3rem;
+                        height: 3rem;
+                    }
+
+                    p {
+                        margin-top: .2rem;
+                        font-size: 1.8rem;
+                    }
+                }
+
+                .telegram {
+                    margin-left: 1rem;
+                    display: flex;
+                    transition: .1s ease-in-out;
+
+                    &:hover {
+                        border-bottom: .3rem solid #767676;
+                    }
+
+                    img {
+                        width: 3rem;
+                        height: 3rem;
+                    }
+
+                    p {
+                        margin-top: .2rem;
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+
+        .current-product {
+            margin-top: 8rem;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+
+            .main_photo {
+                margin-left: 25rem;
+                width: 564rem;
+                height: 60rem;
+                background-image: url('../resources_/imgs/photos/527a8121.webp');
+                background-size: 100%;
+
+                &.sale {
+                    &::before {
+                        position: absolute;
+                        left: 40%;
+                        margin-top: 1.7rem;
+                        content: '';
+                        width: 16rem;
+                        height: 5rem;
+                        background: url('../resources_/imgs/system/SALE-ICON.svg');
+                        background-size: cover;
+                        transform: rotate(13deg);
+                    }
+                }
+
+                &:hover {
+                    background-size: 200%;
+                }
+            }
+
+            .description {
+                margin-left: 3rem;
+                width: 315%;
+                .title {
+                    h1 {
+                        font-family: OpenSansBold;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 3rem;
+                        color: #000000;
+                    }
+                }
+
+                .price {
+                    margin-top: 2rem;
+                    display: flex;
+                    flex-wrap: nowrap;
+
+                    .sale {
+                        h1 {
+                            font-family: OpenSansLight;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 2rem;
+                            line-height: 3.3rem;
+                            letter-spacing: 0.105em;
+                            text-decoration-line: line-through;
+                            color: #969696;
+                        }
+                    }
+
+                    .normal_price {
+                         h1 {
+                            margin-left: 20px;
+                            font-family: OpenSansLight;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 2rem;
+                            line-height: 3.3rem;
+                            letter-spacing: 0.105em;
+                            text-decoration-line: underline;
+                            color: black;
+                        }
+                    }
+                }
+
+                .text {
+                    margin-top: 2rem;
+
+                    h1 {
+                        font-family: OpenSansBold;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 2.4rem;
+                        line-height: 3.3rem;
+                        color: #000000;
+                    }
+
+                    p {
+                        margin-top: 2rem;
+                        margin-right: 14rem;
+                        font-family: OpenSansLight;
+                        font-style: normal;
+                        font-size: 1.5rem;
+                        font-weight: 300;
+                        letter-spacing: 0.105em;
+                        color: #0B0B0B;
+
+                        span {
+                            font-family: OpenSansBold;
+                        }
+                    }
+                }
+            }
+        }
+
+        .delimiter {
+            width: 80%;
+            height: .5rem;
+            margin: 0 auto;
+            margin-top: 2rem;
+            background: #C4C4C4;
+        }
+
+        .more-products {
+            margin: 0 auto;
+            width: 100%;
+            height: 100%;
+
+            .title {
+                font-family: OpenSansLight;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 1.8rem;
+                line-height: 5rem;
+                text-decoration-line: underline;
+                color: #000000;
+                margin-left: 10%;
+            }
+
+            .products {
+                padding-left: 5%;
+                padding-right: 5%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                .product-1 {
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: nowrap;
+                    justify-content: center;
+
+                    img {
+                        width: 50rem;
+                        height: 37rem;
+                        border-radius: 3rem;
+                    }
+
+                    &.sale {
+                        &::before {
+                            position: absolute;
+                            content: '';
+                            width: 12rem;
+                            height: 4rem;
+                            margin-left: 37.5rem;
+                            margin-top: -23rem;
+                            transform: rotate(12.8deg);
+                            background: url('../resources_/imgs/system/SALE-ICON.svg');
+                            background-size: cover;
+                        }
+                    }
+
+                    .title {
+                        margin: 0 auto;
+
+                        h2 {
+                            font-family: OpenSansLight;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 2.7rem;
+                            line-height: 49px;
+                            letter-spacing: 0.105em;
+                            color: #000000;
+                        }
+                    }
+
+                    .price {
+                        margin: 0 auto;
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: nowrap;
+                        justify-content: space-around;
+
+                        .sale-price {
+                            margin: 0 auto;
+
+                            h2 {
+                                font-family: Open Sans;
+                                font-style: normal;
+                                font-weight: 300;
+                                font-size: 2rem;
+                                letter-spacing: 0.105em;
+                                text-decoration-line: line-through;
+                                color: #969696;
+                            }
+                        }
+
+                        .normal-price {
+                            margin: 0 auto;
+
+                            h2 {
+                                font-family: Open Sans;
+                                font-style: normal;
+                                font-weight: 300;
+                                font-size: 2rem;
+                                letter-spacing: 0.105em;
+                                text-decoration-line: underline;
+                                color: black;
+                            }
+                        }
+                    }
+
+                    .more-btn {
+                        margin: 0 auto;
+                        margin-top: 1.5rem;
+                        padding-top: 1rem;
+                        width: 25rem;
+                        height: 6.5rem;
+                        border: .3rem solid #5198A6;
+                        box-sizing: border-box;
+                        text-align: center;
+                        font-family: Open Sans;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 3rem;
+                        line-height: 123.68%;
+                        letter-spacing: -0.045em;
+                        color: #5198A6;
+                        transition: .2s ease-in-out;
+
+                        &:hover {
+                            cursor: pointer;
+                            color: white;
+                            background: #5198A6;
+                        }
+                    }
+                }
+
+                .product-2 {
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: nowrap;
+                    justify-content: center;
+
+                    img {
+                        width: 50rem;
+                        height: 37rem;
+                        border-radius: 3rem;
+                    }
+
+                    &.sale {
+                        &::before {
+                            position: absolute;
+                            content: '';
+                            width: 12rem;
+                            height: 4rem;
+                            margin-left: 37.5rem;
+                            margin-top: -23rem;
+                            transform: rotate(12.8deg);
+                            background: url('../resources_/imgs/system/SALE-ICON.svg');
+                            background-size: cover;
+                        }
+                    }
+
+                    .title {
+                        margin: 0 auto;
+
+                        h2 {
+                            font-family: OpenSansLight;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 2.7rem;
+                            line-height: 49px;
+                            letter-spacing: 0.105em;
+                            color: #000000;
+                        }
+                    }
+
+                    .price {
+                        margin: 0 auto;
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: nowrap;
+                        justify-content: space-around;
+
+                        .sale-price {
+                            margin: 0 auto;
+
+                            h2 {
+                                font-family: Open Sans;
+                                font-style: normal;
+                                font-weight: 300;
+                                font-size: 2rem;
+                                letter-spacing: 0.105em;
+                                text-decoration-line: line-through;
+                                color: #969696;
+                            }
+                        }
+
+                        .normal-price {
+                            margin: 0 auto;
+
+                            h2 {
+                                font-family: Open Sans;
+                                font-style: normal;
+                                font-weight: 300;
+                                font-size: 2rem;
+                                letter-spacing: 0.105em;
+                                text-decoration-line: underline;
+                                color: black;
+                            }
+                        }
+                    }
+
+                    .more-btn {
+                        margin: 0 auto;
+                        margin-top: 1.5rem;
+                        padding-top: 1rem;
+                        width: 25rem;
+                        height: 6.5rem;
+                        border: .3rem solid #5198A6;
+                        box-sizing: border-box;
+                        text-align: center;
+                        font-family: Open Sans;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 3rem;
+                        line-height: 123.68%;
+                        letter-spacing: -0.045em;
+                        color: #5198A6;
+                        transition: .2s ease-in-out;
+
+                        &:hover {
+                            cursor: pointer;
+                            color: white;
+                            background: #5198A6;
+                        }
+                    }
+                }
+
+                .product-3 {
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: nowrap;
+                    justify-content: center;
+
+                    img {
+                        width: 50rem;
+                        height: 37rem;
+                        border-radius: 3rem;
+                    }
+
+                    &.sale {
+                        &::before {
+                            position: absolute;
+                            content: '';
+                            width: 12rem;
+                            height: 4rem;
+                            margin-left: 37.5rem;
+                            margin-top: -23rem;
+                            transform: rotate(12.8deg);
+                            background: url('../resources_/imgs/system/SALE-ICON.svg');
+                            background-size: cover;
+                        }
+                    }
+
+                    .title {
+                        margin: 0 auto;
+
+                        h2 {
+                            font-family: OpenSansLight;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 2.7rem;
+                            line-height: 49px;
+                            letter-spacing: 0.105em;
+                            color: #000000;
+                        }
+                    }
+
+                    .price {
+                        margin: 0 auto;
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: nowrap;
+                        justify-content: space-around;
+
+                        .sale-price {
+                            margin: 0 auto;
+
+                            h2 {
+                                font-family: Open Sans;
+                                font-style: normal;
+                                font-weight: 300;
+                                font-size: 2rem;
+                                letter-spacing: 0.105em;
+                                text-decoration-line: line-through;
+                                color: #969696;
+                            }
+                        }
+
+                        .normal-price {
+                            margin: 0 auto;
+
+                            h2 {
+                                font-family: Open Sans;
+                                font-style: normal;
+                                font-weight: 300;
+                                font-size: 2rem;
+                                letter-spacing: 0.105em;
+                                text-decoration-line: underline;
+                                color: black;
+                            }
+                        }
+                    }
+
+                    .more-btn {
+                        margin: 0 auto;
+                        margin-top: 1.5rem;
+                        padding-top: 1rem;
+                        width: 25rem;
+                        height: 6.5rem;
+                        border: .3rem solid #5198A6;
+                        box-sizing: border-box;
+                        text-align: center;
+                        font-family: Open Sans;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 3rem;
+                        line-height: 123.68%;
+                        letter-spacing: -0.045em;
+                        color: #5198A6;
+                        transition: .2s ease-in-out;
+
+                        &:hover {
+                            cursor: pointer;
+                            color: white;
+                            background: #5198A6;
+                        }
+                    }
+                }
+            }
+        }
+
+        .back-btn {
+            margin: 0 auto;
+            margin-top: 10rem;
+            padding-top: 1rem;
+            width: 30rem;
+            height: 6rem;
+            border: .3rem solid #5198A6;
+            background: #5198A6;
+            box-shadow: 0rem .7rem .4rem rgba(0, 0, 0, 0.25);
+            text-align: center;
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 3.4rem;
+            line-height: 123.68%;
+            letter-spacing: 0.04em;
+            color: #FFFFFF;
+            transition: .2s ease-in-out;
+
+            &:hover {
+                cursor: pointer;
+                border: .3rem solid #5198A6;
+                background: none;
+                color: #5198A6;
+            }
+        }
+    }
+
+    footer {
+        margin-top: 2rem;
+        width: 100%;
+        background: #6A6A6A;
+        text-align: center;
+        font-family: Teplo;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1rem;
+        color: #FFFFFF;
+    }
+}
+
+//4K
+@media (min-width: 3800px) {
+    html {
+        font-size: 1em;
+    }
+}
+
+@font-face {
+    font-family: OpenSansBold;
+    src: url("../resources_/fonts/opensanssemibold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: OpenSansLight;
+    src: url("../resources_/fonts/opensanslight.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: Teplo;
+    src: url("../resources_/fonts/14704.woff2") format("woff2");
+}

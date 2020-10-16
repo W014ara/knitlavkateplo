@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="eu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Teplo</title>
+    <link rel="shortcut icon" href="./resources_/imgs/system/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/adminMin.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="sidebar">
+            <ul>
+                <h1><a href="https://warmteplo.tk">Тепло</a></h1>
+                <h2>Admin panel</h2>
+                <li class="sidebar__menu__el all-catalog">
+                    <p>Список товаров</з>
+                </li>
+                <li class="sidebar__menu__el add-product">
+                    <p>Добавление/удаление товара</p>
+                </li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <div class="swipe-area"></div>
+            <a href="#" data-toggle=".container" id="sidebar-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="content">
+                <!-- <h1>Creating Swipeable Side Menu For the Web</h1> -->
+                <!-- <p class="text">Тепло<br> admin panel</p> -->
+                <section class="main-data">
+                    <div class="main-data__catalog">
+                        <form action="" >
+                            <table class="main-data__catalog__table">
+                                <thead>
+                                    <tr>
+                                        <td>№</td>
+                                        <td>ID</td>
+                                        <td>Наименование</td>
+                                        <td>Цена</td>
+                                        <td>Размер</td>
+                                        <td>Цвет</td>
+                                        <td>Описание</td>
+                                        <td>Скидка</td>
+                                        <td>Изображение</td>
+                                        <!-- <td>Уход</td> -->
+                                        <!-- <td>Брэнд</td> -->
+                                        <!-- <td>Производитель</td> -->
+                                        <!-- <td>Состав</td> -->
+                                    </tr>
+                                </thead>
+                                <tbody class="tableBody">
+                                </tbody>
+                                <tfoot>
+                                </tfoot>
+                            </table>
+                            <button class="main-data__catalog__button__saveData" type="submit">Сохранить
+                                изменения</button>
+                        </form>
+                    </div>
+                    <div class="main-data__add-product">
+                        <form id="getProduct">
+                            <input id="name" type="text" placeholder="Введите название">
+                            <input id="price" type="text" placeholder="Введите цену">
+                            <input id="size" type="text" placeholder="Введите размер">
+                            <input id="color" type="text" placeholder="Введите цвет">
+                            <input id="description" type="text" placeholder="Введите описание">
+                            <div class="inputFile">
+                                <input id="photo" type="file" >
+                                <label for="photo">
+                                    <p>Выберите файл</p>
+                                    <span id="photoTextFile" >
+                                        <!-- <svg>
+                                            <use xlink:href="/resources_/imgs/admin/upload.svg" ></use>
+                                        </svg> -->
+                                    </span>
+                                </label>
+                            </div>
+                            <button class="sendProduct" type="submit">Добавить товар</button>
+                            <!-- <div class="input__wrapper">
+                                <input name="file" type="file" name="file" id="input__file" class="input input__file"
+                                    multiple>
+                                <label for="input__file" class="input__file-button">
+                                    <span class="input__file-icon-wrapper"><img class="input__file-icon"
+                                            src="./img/add.svg" alt="Выбрать файл" width="25"></span>
+                                    <span class="input__file-button-text">Выберите файл</span>
+                                </label>
+                            </div> -->
+                        </form>
+                        <form id="deleteProduct">
+                            <input id="deleteProductFormAdmin" type="text" value="" placeholder="ID товара">
+                            <button class="buttonDeleteProduct" type="submit">Удалить товар</button>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="./scripts/admin.js"></script>
+</body>
+
+</html>
